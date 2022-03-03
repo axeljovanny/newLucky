@@ -1,0 +1,58 @@
+{
+    "en": "ENG", 
+    "es": "ESP",
+    "HOME": "INICIO",
+    "WORK": "PORTAFOLIO",
+    "ABOUT": "NOSOTROS",
+    "CONTACT": "CONTACTO",
+    "SCROLL": "DESLIZA",
+    "ABOUT_TEXT": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "ABOUT_TITTLE": "Somos",
+    "ABOUT_TITTLE2": "Lucky Ducky Studio.",
+    "SERVICES_TITTLE": "SERVICIOS",
+    "WELCOME": "BIENVENIDO A NUESTRO ESTANQUE",
+
+    "FOOTER_DIRECTION": "Av. Bandera nacional # 51",
+    "FOOTER_CITY": "Dolores Hidalgo C.I.N. Guanajuato, México ",
+    "FOOTER_PHONE": "(+52) 418 111 99 41",
+    "FOOTER_MAIL": "hola@luckyducky.studio",
+    "FOOTER_TITTLE": "Ducky House",
+
+    
+
+
+    "SERVICES_BRANDING": "Creación de marca",
+    "BRANDING_ONE":"Naming",
+    "BRANDING_TWO":"Logo/Branding/Rebranding",
+    "BRANDING_THREE":"Copywriting",
+    "BRANDING_FOUR":"Storytellinga",
+    "BRANDING_FIVE":"Identidad Corporativa",
+    "BRANDING_SIX":"Lineamientos de Marca",
+
+    "SERVICES_SERVICES": "Diseño Grafico",
+    "DESIGN_ONE":"Diseño Editorial",
+    "DESIGN_TWO":"Packaging",
+    "DESIGN_THREE":"Ilustración Digital",
+    "DESIGN_FOUR":"Animacion",
+    "DESIGN_FIVE":"Social Media",
+    "DESIGN_SIX":"Prototipo Digital",
+
+    "SERVICES_WEB": "Desarrollo Web",
+    "WEB_ONE":"Interfaz de Usuario UI",
+    "WEB_TWO":"Experiencia de usuario UX.",
+    "WEB_THREE":"Interactive Media",
+    "WEB_FOUR":"Front End",
+    "WEB_FIVE":"Back End",
+
+    "SERVICES_DEVELOP": "Desarrollo de Apps",
+    "DEVELOP_ONE":"Diseño de Apps",
+    "DEVELOP_TWO":"Adaptación Movil.",
+    "DEVELOP_THREE":"Desarrollo multiplataforma",
+
+    "SERVICES_PRODUCTION": "Producción",
+    "PRODUCTION_ONE":"Producción de Podcast",
+    "PRODUCTION_TWO":"Edición de Video",
+    "PRODUCTION_THREE":"Creación de Recursos audiovisuales",
+    "PRODUCTION_FOUR":"Sesión Fotografíca"
+
+    }
