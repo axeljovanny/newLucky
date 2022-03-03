@@ -1,0 +1,11 @@
+.imgFooter {
+  width: calc(10% - 15vw);
+  padding: 4em;
+}
+
+@media only screen and (min-width: 768px) {
+  .imgFooter {
+    width: calc(100% - 15vw);
+    padding: 4em;
+  }
+}
