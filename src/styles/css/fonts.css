@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+    url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaLight";
+  src: local("HelveticaLight"),
+    url(../fonts/HelveticaNeue-Light.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), url(../fonts/HelveticaNeue.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaUltralight";
+  src: local("HelveticaUltralight"),
+    url(../fonts/HelveticaNeue-UltraLight.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaThin";
+  src: local("HelveticaThin"),
+    url(../fonts/HelveticaNeue-Thin.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaMedium";
+  src: local("HelveticaMedium"),
+    url(../fonts/HelveticaNeue-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaCondendesBold";
+  src: local("HelveticaCondendesBold"),
+    url(../fonts/HelveticaNeue-CondensedBold.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaCondendesBlack";
+  src: local("HelveticaCondendesBlack"),
+    url(../fonts/HelveticaNeue-CondensedBlack.ttf) format("truetype");
+  font-display: swap;
+}

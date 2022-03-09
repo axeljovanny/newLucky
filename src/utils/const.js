@@ -1,3 +1,6 @@
+import '../styles/css/fonts.css'
+
+
 export const colors = {
     background: "none",
     softWhite: "#FFF9E9",
@@ -9,9 +12,20 @@ export const colors = {
 }
 
 export const size = {
-    super: "25px",
+    super: "40px",
     tittle: "22px",
     subtittle: "18px",
     text: "16px",
     mini: "14px",
+}
+
+export const font = {
+    condBlack: "HelveticaCondendesBlack",
+    condBold: "HelveticaCondendesBold",
+    bold: "HelveticaBold",
+    regular: "Helvetica",
+    medium: "HelveticaMedium",
+    light: "HelveticaLight",
+    thin: "HelveticaThin",
+    ultraLight: "HelveticaUltralight",
 }
