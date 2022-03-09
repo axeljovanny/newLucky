@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { above } from "./index"
-import { colors } from "../../utils/const"
+import { colors, font, size } from "../../utils/const"
+
 
 export const StyledNavigator = styled.div`
     background: none;
@@ -16,9 +17,9 @@ export const StyledNavigator = styled.div`
   ${above.medium`
   `}
   ${above.large`
-  background: rgb(0, 0, 0, 0);
+  background: gbga(0,0,0,0);
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     width: 5%;
@@ -39,33 +40,35 @@ export const StyledLine = styled.div`
 
 `
 export const StyledIcons = styled.div`
-    display: none ;
+    display: ${props => props.open ? 'flex' : 'none'};
+    height: 25%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    svg{
+        width: 10%;
+        padding: 2% 3%;
+
+    }
     
     ${above.large`
-    padding-top: 2em;
+    padding-top: 5vh;
     display: flex;
-    height: 50%;
+    height: 40%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 2vh;
-    img{
+    svg{
         width: 50%;
-        fill: ${colors.softWhite};
+        
     }
   `}
 `
 
 export const Item = styled.li`
-  font-family: CaviarDreamsB;
+  font-family: Montserrat;
   font-size: .7em;
-  ${above.large`
-
-  `}
-`;
-
-export const LinkStyled = styled.li`
-
   :hover {
     text-decoration: underline;
   }
@@ -73,42 +76,9 @@ export const LinkStyled = styled.li`
 
 
 
-export const Overlay = styled.div`
-  position: absolute;
-  height: ${props => (props.open ? "100vh" : 0)};
-  width: 100vw;
-  background: ${colors.black};
-  transition: height 0.4s ease-in-out;
-  position: fixed;
-  z-index: 5;
 
-  ${above.m` {
-    display: none;
-    }
-  `}
-`;
 
-export const OverlayMenu = styled.ul`
-  padding-inline-start: 30px;
-  list-style: none; 
-  position: absolute;
-  left: 45%;
-  top: 55%;
-  transform: translate(-50%, -50%);
 
-  li {
-    opacity: ${props => (props.open ? 1 : 0)};
-    font-family:  CaviarDreams;
-    text-align: center;
-    font-size: 20px;
-    margin: 50px 0px;
-    transition: opacity 0.4s ease-in-out;
-  }
-
-  li:nth-child(2) {
-    margin: 50px 0px;
-  }
-`;
 
 
 //* Estilos del menu LANGUAGE
@@ -125,29 +95,53 @@ export const StyledLang = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 2vh;
     color: ${colors.white};
+     
     
   `}
 `
-export const LangStyledWeb = styled.button`
+export const LangButtons = styled.div`
 display: none;
+
   ${above.large` {
     background: none;
     cursor: pointer;
     border: none;
     outline: none;
+    height: 30%;
+
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: center;
+    align-items: center;
+
+    li{
+      height: 30%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
     }
+    li:first-child{
+      border-bottom: 1px solid ${colors.softWhite} ;
+    }
+  
+  
+    a{  
+      font-family:  ${font.light};
+      color: ${colors.softWhite} ;
+      font-size: ${size.mini};
+      transition: opacity 0.4s ease-in-out; 
+    }
+
+    }
+
   `}
 `;
 
 
 /*
- Burguer Icon
+ Movil menu
 */
 export const NavIcon = styled.button`
     background: none;
@@ -155,8 +149,9 @@ export const NavIcon = styled.button`
     border: none;
     outline: none;
     margin: 2em 2em;
+    position: fixed;
 
-    ${above.m` {
+    ${above.large` {
       display: none;
       }
     `}
@@ -176,19 +171,69 @@ export const Line = styled.span`
     }
 `;
 
-export const LangStyled = styled.button`
-
-  background: none;
-  cursor: pointer;
-  border: none;
-  outline: none;
+export const Overlay = styled.div`
   display: flex;
-  flex-direction: row;
-  padding:0 3em;
-  justify-content:space-between;
-  
-  ${above.m` {
+  flex-direction: column;
+  height: ${props => (props.open ? "100vh" : 0)};
+  width: 100vw;
+  background: ${colors.darkBlue};
+  transition: height 0.4s ease-in-out;
+  position: fixed;
+  z-index: 5;
+
+  ${above.large` {
     display: none;
     }
   `}
+`;
+
+export const OverlayMenu = styled.ul`
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  width: 100vw;
+  height: 70%;
+  list-style: none; 
+  padding-left: 12%;
+
+
+  li{
+    margin: 0 0 2% 0;
+  }
+
+  li a{
+    opacity: ${props => (props.open ? 1 : 0)};
+    font-family:  ${font.bold};
+    color: ${colors.softWhite} ;
+    font-size: ${size.super};
+    transition: opacity 0.4s ease-in-out;
+    
+  }
+
+`;
+
+
+export const LangStyled = styled.div`
+  display: ${props => props.open ? 'flex' : 'none'};
+  height: 5%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+
+  li:first-child{
+    border-right: 1px solid ${colors.softWhite} ;
+  }
+
+
+  a{  
+    font-family:  ${font.bold};
+    color: ${colors.softWhite} ;
+    font-size: ${size.mini};
+    transition: opacity 0.4s ease-in-out; 
+  }
+
+  
 `;
