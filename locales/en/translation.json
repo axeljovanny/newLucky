@@ -9,7 +9,7 @@
     "ABOUT_TEXT": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "ABOUT_TITTLE": "Somos",
     "ABOUT_TITTLE2": "Lucky Ducky Studio.",
-    "SERVICES_TITTLE": "SERVICES",
+    "SERVICES_TITTLE": "Services",
     "WELCOME": "Welcome",
     "OUR": "Our",
     "POUND": "POUND",
@@ -22,7 +22,7 @@
 
     "SERVICES_BRANDING": "Creación de marca",
     "BRANDING_ONE":"Naming",
-    "BRANDING_TWO":"Logo/Branding/Rebranding",
+    "BRANDING_TWO":"Logo/Branding",
     "BRANDING_THREE":"Copywriting",
     "BRANDING_FOUR":"Storytellinga",
     "BRANDING_FIVE":"Identidad Corporativa",
@@ -51,7 +51,7 @@
     "SERVICES_PRODUCTION": "Producción",
     "PRODUCTION_ONE":"Producción de Podcast",
     "PRODUCTION_TWO":"Edición de Video",
-    "PRODUCTION_THREE":"Creación de Recursos audiovisuales",
+    "PRODUCTION_THREE":"Recursos audiovisuales",
     "PRODUCTION_FOUR":"Sesión Fotografíca"
 
     }

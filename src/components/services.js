@@ -27,7 +27,7 @@ const Services = ({ siteTitle }) => {
                             <li><Trans>BRANDING_SIX</Trans></li>
                         </ul>
                     </Text>
-                    <Text>
+                    <Text izq>
                         <h3><Trans>SERVICES_DESIGN</Trans></h3>
                         <ul>
                             <li><Trans>DESIGN_ONE</Trans></li>
@@ -48,7 +48,7 @@ const Services = ({ siteTitle }) => {
                             <li><Trans>WEB_FIVE</Trans></li>
                         </ul>
                     </Text>
-                    <Text>
+                    <Text izq>
                         <h3><Trans>SERVICES_DEVELOP</Trans></h3>
                         <ul>
                             <li><Trans>DEVELOP_ONE</Trans></li>
