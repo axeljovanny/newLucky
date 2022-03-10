@@ -15,6 +15,7 @@ export const StyledAbout = styled.div`
       
   `}
   ${above.large`
+  grid-template-rows: repeat(4, 1fr); 
   height: 100vh;
   width: 100vw;
   `}
@@ -51,6 +52,7 @@ export const AboutTittle = styled.div`
   transform: translate(20%, 0%);
   align-items: flex-start;
   grid-area: 1 / 1 / 2 / 2;
+  margin: 0;
   width: 50vw;
 
   h2{

@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => {
             <>
                 <StyledLine white></StyledLine>
                 <StyledVideo web>
-                    <video width="100%" autoplay="autoplay" muted loop>
+                    <video width="110%" autoplay="autoplay" muted loop>
                         <source src={Fondo} type="video/mp4" />
                     </video>
                 </StyledVideo>
