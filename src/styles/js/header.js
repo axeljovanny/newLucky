@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 import { above } from "./index"
-import { colors } from "../../utils/const"
+import { colors, font, size } from "../../utils/const"
 
 
 
@@ -12,13 +12,48 @@ const headertransition = keyframes`
 
 `
 
+export const StyledVideo = styled.div`
+  display: ${props => props.web ? 'none' : 'flex'};
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+  position: absolute;
+
+
+  ${above.medium`
+  `}
+  ${above.large`
+  display: ${props => props.web ? 'flex' : 'none'};
+
+  `}
+
+`
+export const StyledVideoMovil = styled.div`
+  width: 100%;
+  display: ${props => props.movil ? 'flex' : 'none'};
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: -3;
+  position: absolute;
+
+
+  ${above.medium`
+  `}
+  ${above.large`
+    display: ${props => props.movil ? 'none' : 'flex'};
+  `}
+
+`
+
 export const StyledHeader = styled.header`
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow: hidden;
 
@@ -30,7 +65,7 @@ export const StyledHeader = styled.header`
     bottom: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, ${colors.darkBlue} 100%); //obscurecer la parte superior
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, ${colors.darkBlue} 100%); //obscurecer la parte superior
 
   }
 
@@ -42,9 +77,9 @@ export const StyledHeader = styled.header`
     backface-visibility: hidden;
     transform: scale(1, 1);
     transform: translateZ(0);
-    background: url('https://images.pexels.com/photos/2179483/pexels-photo-2179483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 50% 0 no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    //background: url('https://images.pexels.com/photos/2179483/pexels-photo-2179483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 50% 0 no-repeat;
+    //background-size: cover;
+    //background-attachment: fixed;
     // animation: ${headertransition} 60s linear 10ms infinite;
     transition: all 0.1s ease-in-out;
     z-index: -2;
@@ -64,6 +99,7 @@ export const StyledHeader = styled.header`
     }
   `}
 `
+
 
 export const StyledLogo = styled.div`
   height: 50%;
@@ -86,15 +122,38 @@ export const StyledLogo = styled.div`
 `
 
 export const StyledTextHeader = styled.div`
-  height: 50%;
+  height: 40%;
   width: 100%;
   // background: ${colors.orange} ;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-right: 10vw;
   padding-left: none;
+  margin:0;
+
+  h3{
+    font-family:  ${font.bold};
+      color: ${colors.softWhite} ;
+      font-size: ${size.headerMovil};
+      margin: 0;
+      transform: translate(0%, -20%);
+
+
+  }
+  h4{
+    font-family:  ${font.ultraLight};
+    color: ${colors.softWhite} ;
+    font-size: ${size.super};
+    margin:0;
+  }
+  h5{
+    font-family:  ${font.medium};
+    color: ${colors.softWhite} ;
+    font-size: ${size.super};
+    margin: 0;
+  }
 
   ${above.medium`
       height: 60%;
@@ -104,10 +163,33 @@ export const StyledTextHeader = styled.div`
   `}
   ${above.large`
       height: 60%;
-      width: 100%;
-      justify-content: flex-start;
+      width: 50%;
+      justify-content: center;
+      align-items: flex-end;
       padding-right: none;
-      padding-left: 30vw;
+      padding-left: 0vw;
+
+      h3{
+        font-family:  ${font.bold};
+          color: ${colors.softWhite} ;
+          font-size: ${size.headerSuper};
+          margin: 0;
+          transform: translate(0%, -20%);
+    
+    
+      }
+      h4{
+        font-family:  ${font.ultraLight};
+        color: ${colors.softWhite} ;
+        font-size: ${size.header};
+        margin:0;
+      }
+      h5{
+        font-family:  ${font.medium};
+        color: ${colors.softWhite} ;
+        font-size: ${size.header};
+        margin: 0;
+      }
   `}
 `
 

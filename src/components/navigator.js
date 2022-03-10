@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import { colors } from "../utils/const";
 import { StyledLang, StyledIcons, StyledNavigator, Item, LangStyled, NavIcon, Line, Overlay, OverlayMenu, LangButtons } from "../styles/js/navigator";
-import { BehanceIcon, FacebookIcon, FiverrIcon, InstagramIcon, LinkedinIcon, TiktokIcon } from '../images/icons/icons.js'
+import { BehanceIcon, FacebookIcon, FiverrIcon, InstagramIcon, LinkedinIcon } from '../images/icons/icons.js'
 import '../styles/css/svg.css'
 
 
