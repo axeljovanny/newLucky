@@ -20,31 +20,30 @@ export function LogoPrincipal() {
     />
 
 }
-export function AboutImg() {
+export function ImgAntonio() {
     return <StaticImage
-        src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        src="../images/AntonioPeñaWeb.jpg"
         alt="A dinosaur"
         placeholder="blurred"
         layout="fixed"
-        width={250}
-        height={250}
+        width={400}
+        height={200}
     />
 
 }
-export function AboutImg2() {
+export function ImgAntonioMovil() {
     return <StaticImage
-        src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        src="../images/AntonioPeñaMovil.jpg"
         alt="A dinosaur"
         placeholder="blurred"
         layout="fixed"
-        width={200}
-        height={400}
+        maxWidth={1300}
     />
 
 }
-export function AboutImg3() {
+export function ImgFogon() {
     return <StaticImage
-        src="https://images.pexels.com/photos/7795864/pexels-photo-7795864.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        src="../images/FogonWeb.jpg"
         alt="A dinosaur"
         placeholder="blurred"
         layout="fixed"
@@ -53,7 +52,38 @@ export function AboutImg3() {
     />
 
 }
+export function ImgFogonMovil() {
+    return <StaticImage
+        src="../images/FogonMovil.jpg"
+        alt="A dinosaur"
+        placeholder="blurred"
+        layout="fixed"
+        maxWidth={1300}
+
+    />
+
+}
+export function ImgJesus() {
+    return <StaticImage
+        src="../images/ImagenesWebJMWebAzul.jpg"
+        alt="A dinosaur"
+        placeholder="blurred"
+        layout="fixed"
+        width={250}
+        height={300}
+    />
+
+}
 export function ImgFooter() {
+    return <StaticImage
+        src="../images/footer.jpg"
+        alt="lucky ducky studio art"
+        formats={['auto', 'webp']}
+        className="imgFooter"
+    />
+
+}
+export function ImgFooterMovil() {
     return <StaticImage
         src="../images/footer.jpg"
         alt="lucky ducky studio art"

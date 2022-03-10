@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import { colors } from "../../utils/const"
+import { colors, size, font } from "../../utils/const"
 import { above } from "./index"
 
 
 export const StyledAbout = styled.div`
   display: grid; 
   grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, auto); 
   grid-column-gap: 0px;
   grid-row-gap: 0px;   
   width: 100vw;
@@ -23,26 +23,46 @@ export const StyledAbout = styled.div`
 
 export const AboutTittle = styled.div`
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   grid-area: 1 / 1 / 2 / 3;
   width: 100vw;
+  margin: 3em 0;
 
   h2{
-    color:${colors.white};
+    color: ${colors.none} ;
+  -webkit-text-fill-color: ${colors.darkBlue} ; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: ${colors.softWhite} ;
+    font-family:  ${font.bold};
+    font-size: ${size.header};
+    margin:0;
   }
   h3{
-    color:${colors.white};
+    font-family:  ${font.bold};
+    color: ${colors.softWhite} ;
+    font-size: ${size.tittle};
+    margin:0;
+    transform: translate(0%, -20%);
   }
 
-
-  ${above.medium`
-      
-  `}
   ${above.large`
+  transform: translate(20%, 0%);
+  align-items: flex-start;
   grid-area: 1 / 1 / 2 / 2;
   width: 50vw;
+
+  h2{
+    font-family:  ${font.bold};
+    font-size: ${size.headerMovil};
+
+  }
+  h3{
+    font-family:  ${font.bold};
+    color: ${colors.softWhite} ;
+    font-size: ${size.header};
+  }
 
   
   `}
@@ -54,11 +74,16 @@ justify-content: center;
 align-items: center;
 grid-area: 3 / 1 / 4 / 3;
 width: 100vw;
+height: auto;
+margin: 3em 0;
+
 
 h4{
   width: 80%;
   text-align: justify;
-  color: ${colors.white};
+  font-family:  ${font.light};
+  color: ${colors.softWhite} ;
+  font-size: ${size.text};
 
 }
 
@@ -75,7 +100,7 @@ h4{
 `
 
 export const AboutImg1 = styled.div`
-display: flex;
+display: ${props => props.web ? 'none' : 'flex'};
 justify-content: center;
 align-items: center;
 grid-area: 2 / 1 / 3 / 3;
@@ -87,7 +112,9 @@ width: 100vw;
       
   `}
   ${above.large`
-  transform: translate(-20%);
+  display: ${props => props.movil ? 'none' : 'flex'};
+
+  transform: translate(-15%);
 
   grid-area: 2 / 1 / 5 / 2;
   width: 50vw;
@@ -97,18 +124,21 @@ width: 100vw;
 
 `
 export const AboutImgDiv2 = styled.div`
-display: flex;
+display: ${props => props.web ? 'none' : 'flex'};
 justify-content: center;
 align-items: center;
 transform: translate(0);
 grid-area: 4 / 1 / 5 / 3;
 width: 100vw;
+margin-bottom: 3em;
+
 
   ${above.medium`
       
   `}
   ${above.large`
-  transform: translate(20%, -20%);
+  display: ${props => props.movil ? 'none' : 'flex'};
+  transform: translate(25%, -30%);
   grid-area: 2 / 1 / 5 / 2;
   width: 50vw;
 
@@ -126,7 +156,7 @@ export const AboutImgDiv3 = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(20%, 10%);
+  transform: translate(30%, 10%);
 
   grid-area: 2 / 1 / 5 / 2;
   width: 50vw;

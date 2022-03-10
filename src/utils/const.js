@@ -13,7 +13,7 @@ export const colors = {
 
 export const size = {
     headerSuper: "120px",
-    headerMovil: "90px",
+    headerMovil: "80px",
     header: "50px",
     super: "40px",
     tittle: "22px",
