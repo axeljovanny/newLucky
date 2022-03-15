@@ -129,7 +129,7 @@ export const StyledTextHeader = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 10vw;
+  padding-right: none;
   padding-left: none;
   margin:0;
 
@@ -166,8 +166,7 @@ export const StyledTextHeader = styled.div`
       width: 50%;
       justify-content: center;
       align-items: flex-end;
-      padding-right: none;
-      padding-left: 0vw;
+      padding: 0;
 
       h3{
         font-family:  ${font.bold};
@@ -268,15 +267,25 @@ a {
 `
 
 export const StyledButtonRight = styled.div`
-position: absolute;
+display: none;
+
+
+
+
+
+  ${above.medium`
+      
+  `}
+  ${above.large`
+  display: flex;
+  position: absolute;
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: flex-end;
-  -webkit-transform: translate(-2%);
+  -webkit-transform: translate(-3%);
+  z-index: 4;
 
-
-  
 
 
 a {
@@ -337,19 +346,55 @@ a {
       opacity: 0;
     }
   }
-
-
-
-
-  ${above.medium`
-      
-  `}
-  ${above.large`
   `}
 `
 
 export const StyledButtonLeft = styled.div`
 position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-transform: translate(2%);
+
+
+a {
+    position: absolute;
+    display: inline-block;
+    -webkit-transform: translate(0, 300%);
+    transform: translate(0, 300%);
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    color: #000;
+    font : normal 400 11px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  a:hover {
+    opacity: .5;
+  }
+
+  span {
+    padding-top:1em;
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  
+
+  ${above.medium`
+      
+  `}
+  ${above.large`
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
@@ -415,10 +460,5 @@ a {
       opacity: 0;
     }
   }
-
-  ${above.medium`
-      
-  `}
-  ${above.large`
   `}
 `

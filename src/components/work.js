@@ -24,9 +24,12 @@ const Work = ({ siteTitle }) => {
                         <Trans>Home</Trans><span></span>
                     </AniLink>
                 </StyledButtonLeft>
-                <h1>
-                    PORTAFOLIO
-                </h1>
+                <div className="header" >
+                    <h1>
+                        PORTAFOLIO
+                    </h1>
+                </div>
+
 
             </div>
             <ul className="cards">
@@ -43,7 +46,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - LEÓN</span>
                                 </div>
                             </div>
-                            <p className="card__description">Jesús Mejía Nutriólogo Clínico Deportivo, is the personal brand of Jesús Mejía it´s a clinical nutritionist and sports nutritionist who resides ...</p>
+                            <p className="card__description">Jesús Mejía Nutriólogo Clínico Deportivo, is the personal brand of Jesús Mejía it´s a clinical nutritionist...</p>
                         </div>
                     </a>
                 </li>
@@ -59,7 +62,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - LEÓN</span>
                                 </div>
                             </div>
-                            <p className="card__description">Jesús Mejía Nutriólogo Clínico Deportivo, is the personal brand of Jesús Mejía it´s a clinical nutritionist and sports nutritionist who resides ...</p>
+                            <p className="card__description">Jesús Mejía Nutriólogo Clínico Deportivo, is the personal brand of Jesús Mejía it´s a clinical nutritionist...</p>
                         </div>
                     </a>
                 </li>
@@ -75,7 +78,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - BERWYN, ILL.</span>
                                 </div>
                             </div>
-                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and at the same time they have adapted to ...</p>
+                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and...</p>
                         </div>
                     </a>
                 </li>
@@ -91,7 +94,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - BERWYN, ILL.</span>
                                 </div>
                             </div>
-                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and at the same time they have adapted to ...</p>
+                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and...</p>
                         </div>
                     </a>
                 </li>
@@ -107,7 +110,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - BERWYN, ILL.</span>
                                 </div>
                             </div>
-                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and at the same time they have adapted to ...</p>
+                            <p className="card__description">"El Fogón" is a restaurant of Mexican kitchen which uses recipes passed down from generation to generation. and...</p>
                         </div>
                     </a>
                 </li>
@@ -123,7 +126,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - DOLORES HIDALGO, GTO</span>
                                 </div>
                             </div>
-                            <p className="card__description">JB es un streamer mexicano que busca hacerce un lugar en el mundo del streaming, le gusta jugar mucho juegos retro y shooters pero tambien juega una inmensa variedad de juegos.</p>
+                            <p className="card__description">JB es un streamer mexicano que busca hacerce un lugar en el mundo del streaming, le gusta jugar mucho juegos...</p>
                         </div>
                     </a>
                 </li>
@@ -139,7 +142,7 @@ const Work = ({ siteTitle }) => {
                                     <span className="card__status">2021 - GUANAJUATO</span>
                                 </div>
                             </div>
-                            <p className="card__description">Antonio Peña Arquitectura es la marca personal del arquitecto José Antonio Peña, el cual buscaba que mediante la imagen de su marca personal pudiera reflejar ...</p>
+                            <p className="card__description">Antonio Peña Arquitectura es la marca personal del arquitecto José Antonio Peña, el cual buscaba que mediante...</p>
                         </div>
                     </a>
                 </li>

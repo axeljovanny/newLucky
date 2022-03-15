@@ -4,6 +4,8 @@ import { colors } from "../utils/const";
 import { StyledLang, StyledIcons, StyledNavigator, Item, LangStyled, NavIcon, Line, Overlay, OverlayMenu, LangButtons } from "../styles/js/navigator";
 import { BehanceIcon, FacebookIcon, FiverrIcon, InstagramIcon, LinkedinIcon } from '../images/icons/icons.js'
 import '../styles/css/svg.css'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 
 
@@ -51,19 +53,20 @@ const Navigator = ({ siteTitle }) => {
             <Overlay open={toggle}>
                 <OverlayMenu open={toggle}>
                     <Item onClick={() => toggleNav(!toggle)}>
-                        <Link key="home" rel="preload" to="/">
-                            <Trans>HOME</Trans>
-                        </Link>
+
+                        <AniLink cover to={'./'} bg="#00161D" direction="left">
+                            <Trans>HOME</Trans><span></span>
+                        </AniLink>
                     </Item>
                     <Item onClick={() => toggleNav(!toggle)}>
-                        <Link key="about" rel="preload" to="/about">
-                            <Trans>ABOUT</Trans>
-                        </Link>
+                        <AniLink cover to="#/about" bg="#00161D" direction="left">
+                            <Trans>ABOUT</Trans><span></span>
+                        </AniLink>
                     </Item>
                     <Item onClick={() => toggleNav(!toggle)}>
-                        <Link key="work" rel="preload" to="/work">
-                            <Trans>WORK</Trans>
-                        </Link>
+                        <AniLink cover to="work" bg="#00161D" direction="left">
+                            <Trans>WORK</Trans><span></span>
+                        </AniLink>
                     </Item>
                 </OverlayMenu>
 
