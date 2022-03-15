@@ -6,17 +6,17 @@ import { SEO, Work } from "../components"
 
 
 
-const IndexPage = () => {
-    return (
-        <>
-            <SEO title="Work" />
-            <Work />
-        </>
-    )
+const WorkPage = () => {
+  return (
+    <>
+      <SEO title="Work" />
+      <Work />
+    </>
+  )
 };
 
 
-export default IndexPage
+export default WorkPage
 
 export const query = graphql`
   query($language: String!) {
