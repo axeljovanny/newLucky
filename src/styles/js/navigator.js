@@ -17,11 +17,10 @@ export const StyledNavigator = styled.div`
   ${above.medium`
   `}
   ${above.large`
-  background: gbga(0,0,0,0);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     width: 5%;
   `}
 
@@ -29,14 +28,14 @@ export const StyledNavigator = styled.div`
 export const StyledLine = styled.div`
     z-index: 11;
     width: 5vw;
-    height: ${props => props.footer ? '' : '100vh'};
+    height: ${props => props.footer ? '' : '100%'};
     position:absolute;
 
   ${above.medium`
   `}
   ${above.large`
   border-right: 0.5mm inset ${props => props.white ? colors.white : colors.black};    
-  height: ${props => props.footer ? '35vh' : '100%'};
+  height: ${props => props.footer ? '35vh' : '100vh'};
   `}
 
 `
@@ -59,12 +58,12 @@ export const StyledIcons = styled.div`
     ${above.large`
     padding-top: 5vh;
     display: ${props => props.footer ? 'none' : 'flex'};
-    height: 40%;
+    height: 50%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     svg{
-        width: 50%;
+        width: 60%;
         
     }
   `}
