@@ -102,7 +102,7 @@ export const StyledHeader = styled.header`
 
 
 export const StyledLogo = styled.div`
-  height: 50%;
+  height: 40%;
   width: 100%;
   // background: ${colors.red} ;
   display: flex;
@@ -340,6 +340,81 @@ a {
 
 
 
+
+  ${above.medium`
+      
+  `}
+  ${above.large`
+  `}
+`
+
+export const StyledButtonLeft = styled.div`
+position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-transform: translate(10%);
+
+
+a {
+    position: absolute;
+    display: inline-block;
+    -webkit-transform: translate(0, 300%);
+    transform: translate(0, 300%);
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    color: #000;
+    font : normal 400 13px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  a:hover {
+    opacity: .5;
+  }
+
+  span {
+    padding-top:1em;
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb05 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb05 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
 
   ${above.medium`
       

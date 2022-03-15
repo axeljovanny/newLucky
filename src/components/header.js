@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => {
                         <LogoPrincipal></LogoPrincipal>
                     </StyledLogo>
                     <StyledButtonRight>
-                        <Link key="scroll" to="#"><Trans>WORK</Trans><span></span></Link>
+                        <Link key="scroll" to="/work"><Trans>WORK</Trans><span></span></Link>
                     </StyledButtonRight>
                     <StyledTextHeader>
                         <h5><Trans>WELCOME</Trans></h5>

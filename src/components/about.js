@@ -3,8 +3,8 @@ import { StyledAbout, AboutTittle, AboutText, AboutImg1, AboutImgDiv2, AboutImgD
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { ImgFogonMovil, ImgAntonio, ImgAntonioMovil, ImgFogon, ImgJesus } from "./imagesComponets";
 import { StyledLine } from "../styles/js/navigator";
-import { Line } from "../images/icons/icons";
-import { colors } from "../utils/const";
+// import { Line } from "../images/icons/icons";
+// import { colors } from "../utils/const";
 import '../styles/css/svg.css'
 
 
@@ -15,11 +15,11 @@ const About = ({ siteTitle }) => {
         <>
             <StyledLine white></StyledLine>
             <StyledAbout>
+                {/* <Line fill={colors.softWhite} className="line" />
                 <Line fill={colors.softWhite} className="line" />
                 <Line fill={colors.softWhite} className="line" />
                 <Line fill={colors.softWhite} className="line" />
-                <Line fill={colors.softWhite} className="line" />
-                <Line fill={colors.softWhite} className="line" />
+                <Line fill={colors.softWhite} className="line" /> */}
                 <AboutTittle>
                     <h2><Trans>ABOUT_TITTLE</Trans></h2>
                     <h3><Trans>ABOUT_TITTLE2</Trans></h3>
