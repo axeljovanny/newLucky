@@ -9,16 +9,12 @@ export const StyledServices = styled.div`
   justify-content: center;
   flex-direction: column ;
   background: ${colors.softWhite};
-  height: auto;
   width: 100vw;
   
   ${above.medium`
       
   `}
-  ${above.large`
-  height: 100vh;
-
-  
+  ${above.large`  
 
   `}
 `
@@ -28,14 +24,14 @@ export const TittleServices = styled.div`
   align-items: center;
   justify-content: center;
   background: ${colors.softWhite};
-  height: 10%;
   width: 100vw;
 
   h2{
-    padding-left: 0;
-    font-family:  ${font.light};
+    padding: 0;
+    margin-bottom: 1%;
+    font-family:  ${font.thin};
     color: ${colors.black} ;
-    font-size: ${size.super};
+    font-size: ${size.hola};
   }
 
   ${above.medium`
@@ -45,7 +41,7 @@ export const TittleServices = styled.div`
   justify-content: flex-start;
 
   h2{
-    padding-left: 11%;
+    padding-left: 10%;
   }
   `}
 `
@@ -55,10 +51,10 @@ export const TextServices = styled.div`
   background: ${colors.softWhite};
   height: 80%;
   width: 100%;
-  padding: 10% 0%;
+  padding: 0%;
   gap: 0px;
   flex-flow: row wrap;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 
 
   ${above.medium`
@@ -66,8 +62,8 @@ export const TextServices = styled.div`
   `}
   ${above.large`
   gap: 10px;
-    width: 100;
-  padding: 0 10%;
+  width: 100;
+  padding: 0 5%;
 
 
   `}
@@ -109,7 +105,7 @@ export const Text = styled.div`
   justify-content: center;
   text-align: justify;
   align-items: center;
-  padding: 0%;
+  padding: 2% 0;
 
 
   h3{
@@ -121,7 +117,7 @@ export const Text = styled.div`
     ul{
       font-family:  ${font.light};
       color: ${colors.black} ;
-      font-size: ${size.subtittle};
+      font-size: ${size.text};
       margin:0;
     }
   `}

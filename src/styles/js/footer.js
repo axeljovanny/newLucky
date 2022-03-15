@@ -1,110 +1,158 @@
 import styled from "styled-components"
-import { colors } from "../../utils/const"
+import { colors, font, size } from "../../utils/const"
 import { above } from "./index"
 
 
 export const StyledFooter = styled.div`
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  background: ${colors.none};
+  padding: 5% 0;
+  height: auto;
+  background: ${colors.darkBlue};
   ${above.medium`
       
   `}
   ${above.large`
-  height: 60vh;
+  flex-flow: row;
   width: 100vw;
+  height: 50vh;
+  padding: 0;
   `}
 `
 export const FooterText = styled.div`
   display: flex;
-  width: 100vw;
+  width: 80%;
   flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
   background: ${colors.darkBlue};
   padding-left: 0;
+  gap: 0;
+
   ${above.medium`
       
   `}
   ${above.large`
-  height: 60vh;
+  align-items: flex-end;
   width: 70vw;
-  padding-left: 10%;
+  gap: 10vh;
   `}
 `
 export const FooterImage = styled.div`
-  display:flex;
-  width: 100vw;
+  display: ${props => props.movil ? 'flex' : 'none'};  
+  justify-content: center;
+  align-items: flex-start;
   background: ${colors.darkBlue};
 
   ${above.medium`
       
   `}
   ${above.large`
-  width: 30vw;
+  display: ${props => props.web ? 'flex' : 'none'}; 
+  justify-content: center;
+  align-items: flex-start; 
+
+  
   `}
 `
+
 export const FooterContact = styled.div`
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column wrap ;
   background: ${colors.darkBlue};
   ${above.medium`
       
   `}
   ${above.large`
-  height: 60%;
+  flex-flow: row wrap ;
   `}
 `
 export const FooterSocial = styled.div`
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
   padding-left: 0;
+  width: auto;
   background: ${colors.darkBlue};
   ${above.medium`
       
   `}
   ${above.large`
   width: 80%;
-  height: 40%;
   `}
 `
 
 export const Text = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: column wrap;
   justify-content: center;
-  transform: translateX(8vw);
   background: ${colors.none};
   width: 100%;
   color: ${colors.white};
+  h3{
+    font-family:  ${font.light};
+    color: ${colors.white} ;
+    font-size: ${size.tittle};
+  }
+
+  p{
+  font-family:  ${font.light};
+    color: ${colors.white} ;
+    font-size: ${size.text};
+    margin: 0.2em 0 ;
+}
 
 
   ${above.medium`
       
   `}
   ${above.large`
-  flex-flow: column wrap;
   width: 50%;
-  justify-content: center;
+  align-items: flex-end;
 
+  h3{
+    font-family:  ${font.light};
+    color: ${colors.white} ;
+    font-size: ${size.tittle};
+  }
+
+  p{
+    margin: 0.2em 0 ;
+    font-family:  ${font.light};
+    color: ${colors.white} ;
+    font-size: ${size.text};
+}
   `}
 `
 
 export const Social = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: ${colors.none};
-  width: 15%;
+  display: none;
 
   a{
-  color: ${colors.white};
+    display: none;
   }
   ${above.medium`
       
   `}
   ${above.large`
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${colors.none};
+  width: 15%;
+  a{
+    display: flex;
+    font-family:  ${font.light};
+      color: ${colors.white} ;
+      font-size: ${size.text};
+    }
   `}
+  
 `

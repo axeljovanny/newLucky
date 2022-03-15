@@ -12,14 +12,16 @@ export const colors = {
 }
 
 export const size = {
-    headerSuper: "120px",
-    headerMovil: "80px",
-    header: "50px",
-    super: "40px",
-    tittle: "22px",
-    subtittle: "18px",
-    text: "16px",
-    mini: "14px",
+    headerSuper: "calc(120px + 0.4vw)",
+    headerMovil: "calc(80px + 0.4vw)",
+    header: "calc(50px + 0.3vw)",
+    super: "calc(40px + 0.3vw)",
+    hola: "calc(34px + 0.3vw)",
+    tittle: "calc(22px + 0.2vw)",
+    subtittle: "calc(18px + 0.2vw)",
+    text: "calc(16px + 0.1vw)",
+    mini: "calc(14px + 0.1vw)",
+    minimini: "calc(12px + 0.1vw)",
 }
 
 export const font = {

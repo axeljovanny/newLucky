@@ -29,13 +29,14 @@ export const StyledNavigator = styled.div`
 export const StyledLine = styled.div`
     z-index: 11;
     width: 5vw;
-    height: ${props => props.footer ? '50vh' : '100vh'};
+    height: ${props => props.footer ? '' : '100vh'};
     position:absolute;
 
   ${above.medium`
   `}
   ${above.large`
   border-right: 0.5mm inset ${props => props.white ? colors.white : colors.black};    
+  height: ${props => props.footer ? '35vh' : '100%'};
   `}
 
 `
@@ -45,16 +46,19 @@ export const StyledIcons = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: ${props => props.footer ? '0 10%' : '0'};
+
   
     svg{
-        width: 10%;
+        width: ${props => props.footer ? '90%' : '10%'};
         padding: 2% 3%;
+
 
     }
     
     ${above.large`
     padding-top: 5vh;
-    display: flex;
+    display: ${props => props.footer ? 'none' : 'flex'};
     height: 40%;
     flex-direction: column;
     justify-content: flex-start;
@@ -130,7 +134,7 @@ display: none;
     a{  
       font-family:  ${font.light};
       color: ${colors.softWhite} ;
-      font-size: ${size.mini};
+      font-size: ${size.minimini};
       transition: opacity 0.4s ease-in-out; 
     }
 
@@ -185,6 +189,17 @@ export const Overlay = styled.div`
     display: none;
     }
   `}
+`;
+
+export const OverlayPortafolio = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: ${props => (props.open ? "100vh" : 0)};
+  width: 100vw;
+  background: ${colors.darkBlue};
+  transition: height 0.4s ease-in-out;
+  position: fixed;
+  z-index: 5;
 `;
 
 export const OverlayMenu = styled.ul`

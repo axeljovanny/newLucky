@@ -25,9 +25,8 @@ export function ImgAntonio() {
         src="../images/AntonioPeñaWeb.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fixed"
-        width={400}
-        height={200}
+        formats={['auto', 'webp']}
+        className="imgAntonio"
     />
 
 }
@@ -46,9 +45,8 @@ export function ImgFogon() {
         src="../images/FogonWeb.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fixed"
-        width={300}
-        height={200}
+        formats={['auto', 'webp']}
+        className="imgFogon"
     />
 
 }
@@ -68,9 +66,8 @@ export function ImgJesus() {
         src="../images/ImagenesWebJMWebAzul.jpg"
         alt="A dinosaur"
         placeholder="blurred"
-        layout="fixed"
-        width={250}
-        height={300}
+        formats={['auto', 'webp']}
+        className="imgJesus"
     />
 
 }
@@ -89,6 +86,7 @@ export function ImgFooterMovil() {
         alt="lucky ducky studio art"
         formats={['auto', 'webp']}
         className="imgFooter"
+
     />
 
 }

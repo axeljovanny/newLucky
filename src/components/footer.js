@@ -1,8 +1,10 @@
 import React from "react"
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { FooterContact, FooterImage, FooterSocial, FooterText, Social, StyledFooter, Text } from "../styles/js/footer";
-import { StyledLine } from "../styles/js/navigator";
-import { ImgFooter } from "./imagesComponets";
+import { StyledIcons, StyledLine } from "../styles/js/navigator";
+import { ImgFooter, ImgFooterMovil } from "./imagesComponets";
+import { BehanceIcon, FacebookIcon, FiverrIcon, InstagramIcon, LinkedinIcon } from "../images/icons/icons";
+import { colors } from "../utils/const";
 
 
 
@@ -28,15 +30,26 @@ const Footer = ({ siteTitle }) => {
                     <FooterSocial>
                         <Social><a href="https://www.instagram.com/lduckystudio/" target="_blanck" color="white">Instagram</a></Social>
                         <Social><a href="https://www.facebook.com/lduckystudio" target="_blanck" color="white">Facebook</a></Social>
-                        <Social><a href="https://www.facebook.com/lduckystudio" target="_blanck" color="white">TikTok</a></Social>
+                        <Social><a href="https://www.linkedin.com/company/lduckystudio/" target="_blanck" color="white">LinkedIn</a></Social>
                         <Social><a href="https://es.fiverr.com/axeljovannyqt?up_rollout=true" target="_blanck" color="white">Fiverr</a></Social>
                         <Social><a href="https://www.behance.net/axeljovanny" target="_blanck" color="white">Behance</a></Social>
+
                     </FooterSocial>
 
                 </FooterText>
-                <FooterImage>
+                <FooterImage web>
                     <ImgFooter />
                 </FooterImage>
+                <FooterImage movil>
+                    <ImgFooterMovil />
+                </FooterImage>
+                <StyledIcons footer open>
+                    <FacebookIcon fill={colors.softWhite} className="svgAbout" />
+                    <BehanceIcon fill={colors.softWhite} className="svgAbout" />
+                    <InstagramIcon fill={colors.softWhite} className="svgAbout" />
+                    <LinkedinIcon fill={colors.softWhite} className="svgAbout" />
+                    <FiverrIcon fill={colors.softWhite} className="svgAbout" />
+                </StyledIcons>
             </StyledFooter>
         </>
     )
