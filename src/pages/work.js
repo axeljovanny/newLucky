@@ -1,8 +1,6 @@
 import React from "react"
-import { graphql, Link } from 'gatsby'
-import { SEO, Work, Header, Footer } from "../components"
-import { StyledButton } from '../styles/js/header'
-import { Trans } from 'gatsby-plugin-react-i18next';
+import { graphql } from 'gatsby'
+import { SEO, Work } from "../components"
 
 
 

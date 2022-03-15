@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { Link } from 'gatsby'
 import { StyledHeader, StyledLogo, StyledTextHeader, StyledButtonRight, StyledVideo, StyledVideoMovil } from '../styles/js/header'
 import { LogoPrincipal } from "./imagesComponets"
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { StyledLine } from "../styles/js/navigator";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fondo from "../images/fondo.mp4"
 import FondoMovil from "../images/fondoMovil.mp4"
 import '../styles/css/svg.css'
@@ -39,7 +39,9 @@ const Header = ({ siteTitle }) => {
                         <LogoPrincipal></LogoPrincipal>
                     </StyledLogo>
                     <StyledButtonRight>
-                        <Link key="scroll" to="/work"><Trans>WORK</Trans><span></span></Link>
+                        <AniLink cover to="work" bg="#00161D" direction="left">
+                            <Trans>WORK</Trans><span></span>
+                        </AniLink>
                     </StyledButtonRight>
                     <StyledTextHeader>
                         <h5><Trans>WELCOME</Trans></h5>
