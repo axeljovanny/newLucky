@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    /* Location of the image */
+    /* background-image: url(../img/bg.png);
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color: #fff;
+}
+
+.imagen {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    /** Capas**/
+}
+
+canvas {
+    position: fixed;
+}
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+p {
+    line-height: 1.33em;
+    color: #7e7e7e;
+}
+
+h1 {
+    color: #eeeeee;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader {
+    position: relative;
+    margin: 200px 0 0 0;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-right {
+    top: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateY(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);
+    /* IE 9 */
+    transform: translateY(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+
+/* JavaScript Turned Off */
+
+.no-js #loader-wrapper {
+    display: none;
+}
+
+.no-js h1 {
+    color: #222222;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+.provicional {
+    width: 100%;
+    display: block;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+        /* h5bp.com/t */
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* 
+	Ok so you have made it this far, that means you are very keen to on my code. 
+	Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
+	Follow me @ihatetomatoes
+*/
+
+@keyframes fill-level {
+    0% {
+        transform: translate3d(-413px, -53px, 0) rotate(45deg);
+    }
+    15% {
+        transform: translate3d(-393px, -73px, 0) rotate(25deg);
+    }
+    30% {
+        transform: translate3d(-343px, -123px, 0) rotate(45deg);
+    }
+    45% {
+        transform: translate3d(-283px, -183px, 0) rotate(55deg);
+    }
+    60% {
+        transform: translate3d(-263px, -203px, 0) rotate(45deg);
+    }
+    75% {
+        transform: translate3d(-243px, -223px, 0) rotate(35deg);
+    }
+    90% {
+        transform: translate3d(-223px, -243px, 0) rotate(45deg);
+    }
+    100% {
+        transform: translate3d(-203px, -263px, 0) rotate(55deg);
+    }
+}
+
+.fill {
+    backface-visibility: hidden;
+    z-index: 20;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    transform: rotate(-45deg);
+}
+
+.fill .gooey-container {
+    filter: url(#gooey-fill);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 0 18px #00f inset;
+    border-radius: 50% 0 50% 50%;
+    overflow: hidden;
+}
+
+.fill .gooey-container .level,
+.fill .gooey-container .bubble {
+    background: #ff4081;
+}
+
+.fill .gooey-container .level {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    transform-origin: 50% 0;
+    transform: translate3d(-413px, -53px, 0) rotate(45deg);
+    animation: fill-level 3.5s linear infinite;
+    box-shadow: 0 0 100px 0 #00f inset, 0 0 200px 0 #00f inset;
+}
+
+@keyframes fill-bubbles {
+    0% {
+        transform: translate3d(-100px, -20px, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate3d(100px, -40px, 0) rotate(180deg);
+    }
+    100% {
+        transform: translate3d(-100px, -20px, 0) rotate(360deg);
+    }
+}
+
+.fill .gooey-container .bubble {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg) translate3d(0, 0, 0);
+    box-shadow: 0 0 30px 20px #00f inset;
+}
+
+.fill .gooey-container .bubble:nth-child(1) {
+    animation: fill-bubbles 1.5s ease 0.5s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(2) {
+    animation: fill-bubbles 3s ease 0.25s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(3) {
+    animation: fill-bubbles 4.5s ease 0.1666666667s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(4) {
+    animation: fill-bubbles 6s ease 0.125s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(5) {
+    animation: fill-bubbles 7.5s ease 0.1s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(6) {
+    animation: fill-bubbles 9s ease 0.0833333333s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(7) {
+    animation: fill-bubbles 10.5s ease 0.0714285714s infinite;
+}
+
+.fill .gooey-container .bubble:nth-child(8) {
+    animation: fill-bubbles 12s ease 0.0625s infinite;
+}
+
+@keyframes black-hole {
+    0% {
+        transform: scale(1) translate3d(75px, 0, 0);
+    }
+    50% {
+        transform: scale(4) translate3d(55px, 0, 0);
+    }
+    100% {
+        transform: scale(1) translate3d(75px, 0, 0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+        /* background-image: url(images/background-photo-mobile-devices.jpg);*/
+    }
+    .imagen img {
+        height: 80%;
+        width: 80%;
+        left: 5%;
+    }
+}
