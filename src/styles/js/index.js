@@ -45,4 +45,8 @@ ul {
   margin: 0 auto;
   list-style-type: none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
 `;

@@ -89,6 +89,12 @@ h4{
 
 }
 
+br
+{   content: "A" !important;
+    display: block !important;
+    margin-bottom: 1.5em !important;
+}
+
   ${above.medium`
       
   `}

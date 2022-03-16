@@ -15,8 +15,21 @@ export function LogoPrincipal() {
         alt="A dinosaur"
         placeholder="blurred"
         layout="fixed"
+        formats={['auto', 'webp']}
         width={200}
         height={200}
+    />
+
+}
+export function LogoPrincipalMovil() {
+    return <StaticImage
+        src="../images/gatsby-icon.png"
+        alt="A dinosaur"
+        placeholder="blurred"
+        layout="fixed"
+        formats={['auto', 'webp']}
+        width={100}
+        height={100}
     />
 
 }
@@ -73,7 +86,7 @@ export function ImgJesus() {
 }
 export function ImgFooter() {
     return <StaticImage
-        src="../images/footer.jpg"
+        src="../images/footer.png"
         alt="lucky ducky studio art"
         formats={['auto', 'webp']}
         className="imgFooter"
@@ -82,7 +95,7 @@ export function ImgFooter() {
 }
 export function ImgFooterMovil() {
     return <StaticImage
-        src="../images/footer.jpg"
+        src="../images/footer.png"
         alt="lucky ducky studio art"
         formats={['auto', 'webp']}
         className="imgFooter"

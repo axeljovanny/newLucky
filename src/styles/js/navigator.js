@@ -26,14 +26,17 @@ export const StyledNavigator = styled.div`
 
 `
 export const StyledLine = styled.div`
-    z-index: 11;
-    width: 5vw;
-    height: ${props => props.footer ? '' : '100%'};
-    position:absolute;
+display:none;
+
 
   ${above.medium`
   `}
   ${above.large`
+  display:flex;
+  z-index: 11;
+    width: 5vw;
+    height: ${props => props.footer ? '' : '100%'};
+    position:absolute;
   border-right: 0.5mm inset ${props => props.white ? colors.white : colors.black};    
   height: ${props => props.footer ? '35vh' : '100vh'};
   `}
@@ -45,11 +48,11 @@ export const StyledIcons = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: ${props => props.footer ? '0 10%' : '0'};
+    padding: ${props => props.footer ? '0 10%' : '0 10%'};
 
   
     svg{
-        width: ${props => props.footer ? '90%' : '10%'};
+        width: ${props => props.footer ? '90%' : '90%'};
         padding: 2% 3%;
 
 

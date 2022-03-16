@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { StyledHeader, StyledLogo, StyledTextHeader, StyledButtonRight, StyledVideo, StyledVideoMovil } from '../styles/js/header'
-import { LogoPrincipal } from "./imagesComponets"
+import { LogoPrincipal, LogoPrincipalMovil } from "./imagesComponets"
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { StyledLine } from "../styles/js/navigator";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -29,14 +29,16 @@ const Header = ({ siteTitle }) => {
                 </StyledVideo>
 
                 <StyledVideoMovil movil>
-
-                    <video width="auto" height="10%" autoplay="autoplay" muted loop>
+                    <video width="100%" height="10%" autoplay="autoplay" muted loop>
                         <source src={FondoMovil} type="video/mp4" />
                     </video>
                 </StyledVideoMovil>
                 <StyledHeader>
                     <StyledLogo>
                         <LogoPrincipal></LogoPrincipal>
+                    </StyledLogo>
+                    <StyledLogo movil>
+                        <LogoPrincipalMovil></LogoPrincipalMovil>
                     </StyledLogo>
                     <StyledButtonRight>
                         <AniLink cover to="work" bg="#00161D" direction="left">

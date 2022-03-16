@@ -1,16 +1,8 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { above } from "./index"
 import { colors, font, size } from "../../utils/const"
 
 
-
-const headertransition = keyframes`
-  0% { transform: scale(1) translateY(0px)}
-  50% { transform: scale(1.3) translateY(5%)}
-  75% { transform: scale(1.2) translateY(-5%)}
-  100% { transform: scale(1) translateY(0px)}
-
-`
 
 export const StyledVideo = styled.div`
   display: ${props => props.web ? 'none' : 'flex'};
@@ -48,7 +40,7 @@ export const StyledVideoMovil = styled.div`
 `
 
 export const StyledHeader = styled.header`
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -57,36 +49,10 @@ export const StyledHeader = styled.header`
   position: relative;
   overflow: hidden;
 
-  &:after {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, ${colors.darkBlue} 100%); //obscurecer la parte superior
-
-  }
-
-  &:before {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    backface-visibility: hidden;
-    transform: scale(1, 1);
-    transform: translateZ(0);
-    //background: url('https://images.pexels.com/photos/2179483/pexels-photo-2179483.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 50% 0 no-repeat;
-    //background-size: cover;
-    //background-attachment: fixed;
-    // animation: ${headertransition} 60s linear 10ms infinite;
-    transition: all 0.1s ease-in-out;
-    z-index: -2;
-  }
 
 
   ${above.medium`
+  height: 100vh;
     a{
       height: 100%;
       font-size: 0.8rem;
@@ -102,21 +68,29 @@ export const StyledHeader = styled.header`
 
 
 export const StyledLogo = styled.div`
-  height: 40%;
-  width: 100%;
-  // background: ${colors.red} ;
+  display: ${props => props.movil ? 'flex' : 'none'};
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    height: 30%;
+    width: 100%;
+  
+
+  ${above.medium`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  ${above.medium`
     height: 30%;
     width: 100%;
   `}
   ${above.large`
-    height: 30%;
-    width: 100%;
+  display: ${props => props.movil ? 'none' : 'flex'};
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  width: 100%;
   `}
 
 `
@@ -193,6 +167,17 @@ export const StyledTextHeader = styled.div`
 `
 
 export const StyledButton = styled.div`
+display: none;
+
+
+
+
+
+  ${above.medium`
+      
+  `}
+  ${above.large`
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -255,14 +240,6 @@ a {
       opacity: 0;
     }
   }
-
-
-
-
-  ${above.medium`
-      
-  `}
-  ${above.large`
   `}
 `
 

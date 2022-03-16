@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "HelveticaBold";
+  src: local("HelveticaBold"),
+    url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), url(../fonts/HelveticaNeue.ttf) format("truetype");
+  font-display: swap;
+}
+
 :root {
   --surface-color: #00161d;
   --curve: 40;
@@ -21,9 +34,8 @@ body {
 
 .header h1 {
   color: #00161d;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "HelveticaBold";
   font-size: calc(35px + 5vw);
-  font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
@@ -114,7 +126,7 @@ body {
 .card__tagline {
   display: block;
   margin: 1em 0;
-  font-family: "MockFlowFont";
+  font-family: "Helvetica";
   font-size: 0.8em;
   color: #d7bdca;
 }
@@ -128,7 +140,7 @@ body {
   padding: 0 2em 2em;
   margin: 0;
   color: #d7bdca;
-  font-family: "MockFlowFont";
+  font-family: "Helvetica";
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
