@@ -35,7 +35,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Josefin;
-  background: ${colors.red}
+  background: ${colors.black}
   height:100%; 
 }
 a {

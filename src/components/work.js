@@ -21,12 +21,12 @@ const Work = ({ siteTitle }) => {
             <div className="header">
                 <StyledButtonLeft>
                     <AniLink cover to={'../'} bg="#00161D" direction="right">
-                        <Trans>Home</Trans><span></span>
+                        <Trans>HOME</Trans><span></span>
                     </AniLink>
                 </StyledButtonLeft>
                 <div className="header" >
                     <h1>
-                        PORTAFOLIO
+                        <Trans>WORK</Trans>
                     </h1>
                 </div>
 
