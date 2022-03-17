@@ -1,13 +1,16 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { StyledHeader, StyledLogo, StyledTextHeader, StyledButtonRight, StyledVideo, StyledVideoMovil } from '../styles/js/header'
-import { LogoPrincipal, LogoPrincipalMovil } from "./imagesComponets"
+import { LogoPrincipal } from "./imagesComponets"
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { StyledLine } from "../styles/js/navigator";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fondo from "../images/fondo.mp4"
 import FondoMovil from "../images/fondoMovil.mp4"
 import '../styles/css/svg.css'
+import { colors } from "../utils/const";
+import { Trebol } from '../images/icons/icons.js'
+
 
 
 
@@ -38,7 +41,7 @@ const Header = ({ siteTitle }) => {
                         <LogoPrincipal></LogoPrincipal>
                     </StyledLogo>
                     <StyledLogo movil>
-                        <LogoPrincipalMovil></LogoPrincipalMovil>
+                        <Trebol fill={colors.softWhite}></Trebol>
                     </StyledLogo>
                     <StyledButtonRight>
                         <AniLink cover to="work" bg="#00161D" direction="left">

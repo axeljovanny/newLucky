@@ -74,10 +74,16 @@ export const StyledLogo = styled.div`
   align-items: center;
     height: 30%;
     width: 100%;
+
+    svg{
+      width: '10%'};
+
+
+  }
   
 
   ${above.medium`
-  display: flex;
+  display: ${props => props.movil ? 'none' : 'flex'};
   flex-direction: row;
   justify-content: center;
   align-items: center;
