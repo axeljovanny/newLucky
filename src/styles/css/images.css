@@ -1,16 +1,27 @@
 .imgFooter {
   width: 50%;
-  margin: 2em;
+  margin-top: 3em;
+}
+.imgFooter img {
+  object-fit: cover;
+}
+
+.imgAntonio {
+  width: 100%;
+  padding: 0;
+}
+.imgFogon {
+  width: 100%;
+  padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .imgFooter {
-    width: 45%;
-    padding: 0;
-    margin: 0;
-  }
-  .imgAntonio {
     width: 60%;
+  }
+
+  .imgAntonio {
+    width: 70%;
     padding: 0;
   }
   .imgFogon {
@@ -18,7 +29,7 @@
     padding: 0;
   }
   .imgJesus {
-    width: 35%;
+    width: 40%;
     padding: 0;
   }
   .imgLogo {

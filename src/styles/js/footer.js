@@ -46,11 +46,14 @@ export const FooterImage = styled.div`
   justify-content: center;
   align-items: flex-start;
   background: ${colors.darkBlue};
+  width: 100%;
 
   ${above.medium`
+  width: 50%;
       
   `}
   ${above.large`
+  width: 20%;
   display: ${props => props.web ? 'flex' : 'none'}; 
   justify-content: center;
   align-items: flex-start; 

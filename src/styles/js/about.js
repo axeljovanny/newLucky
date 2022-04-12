@@ -146,7 +146,7 @@ margin-bottom: 3em;
   `}
   ${above.large`
   display: ${props => props.movil ? 'none' : 'flex'};
-  transform: translate(25%, -30%);
+  transform: translate(20%, -25%);
   grid-area: 2 / 1 / 5 / 2;
   width: 50vw;
 

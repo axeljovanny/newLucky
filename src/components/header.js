@@ -6,17 +6,14 @@ import { Trans } from 'gatsby-plugin-react-i18next';
 import { StyledLine } from "../styles/js/navigator";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fondo from "../images/fondo.mp4"
+import FondoWebM from "../images/fondo.webm"
 import FondoMovil from "../images/fondoMovil.mp4"
+import Poster from "../images/fondo.png"
+import PosterMovil from "../images/fondoMovil.png"
+
 import '../styles/css/svg.css'
 import { colors } from "../utils/const";
 import { Trebol } from '../images/icons/icons.js'
-
-
-
-
-
-
-
 
 
 const Header = ({ siteTitle }) => {
@@ -26,17 +23,18 @@ const Header = ({ siteTitle }) => {
             <>
                 <StyledLine white></StyledLine>
                 <StyledVideo web>
-                    <video width="110%" autoplay="autoplay" muted loop>
-                        <source src={Fondo} type="video/mp4" />
+                    <video width="100%" autoplay="autoplay" muted loop poster={Poster}>
+                        <source src={FondoWebM} type="video/webm" />
                     </video>
                 </StyledVideo>
 
                 <StyledVideoMovil movil>
-                    <video width="100%" height="10%" autoplay="autoplay" muted loop>
+                    <video width="100%" height="10%" autoplay="autoplay" muted loop poster={PosterMovil}>
                         <source src={FondoMovil} type="video/mp4" />
                     </video>
                 </StyledVideoMovil>
                 <StyledHeader>
+
                     <StyledLogo>
                         <LogoPrincipal></LogoPrincipal>
                     </StyledLogo>

@@ -17,6 +17,15 @@ export const StyledVideo = styled.div`
   `}
   ${above.large`
   display: ${props => props.web ? 'flex' : 'none'};
+  video::after{
+    background: ${colors.black};
+    transition: opacity 0.4s ease-in-out;
+  }
+  video::before{
+    background: ${colors.none};
+
+
+  }
 
   `}
 
@@ -48,6 +57,8 @@ export const StyledHeader = styled.header`
   align-items: flex-start;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, ${colors.darkBlue} 100%);
+
 
 
 
