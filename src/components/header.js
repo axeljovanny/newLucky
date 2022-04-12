@@ -5,9 +5,8 @@ import { LogoPrincipal } from "./imagesComponets"
 import { Trans } from 'gatsby-plugin-react-i18next';
 import { StyledLine } from "../styles/js/navigator";
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Fondo from "../images/fondo.mp4"
 import FondoWebM from "../images/fondo.webm"
-import FondoMovil from "../images/fondoMovil.mp4"
+import FondoMovilM from "../images/fondoMovil.webm"
 import Poster from "../images/fondo.png"
 import PosterMovil from "../images/fondoMovil.png"
 
@@ -30,7 +29,7 @@ const Header = ({ siteTitle }) => {
 
                 <StyledVideoMovil movil>
                     <video width="100%" height="10%" autoplay="autoplay" muted loop poster={PosterMovil}>
-                        <source src={FondoMovil} type="video/mp4" />
+                        <source src={FondoMovilM} type="video/webm" />
                     </video>
                 </StyledVideoMovil>
                 <StyledHeader>
