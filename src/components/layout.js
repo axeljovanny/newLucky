@@ -18,17 +18,6 @@ const Layout = ({ children }) => (
     <GlobalStyles />
     <main>{children}</main>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157941700-1">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-157941700-1');
-    </script>
-
   </>
 
 )
