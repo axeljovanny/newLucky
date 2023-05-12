@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Navigator />
       <Header id="header" siteTitle="Home" />
       <StyledButton>
-        <Link key="scroll" to={'#about'}><Trans>SCROLL</Trans><span></span></Link>
+        <Link key="edit" href='paypal.me/luckyduckystudio'><Trans>Paypal</Trans><span></span></Link>
       </StyledButton>
       <About id="about" />
       <Services id="services" />
