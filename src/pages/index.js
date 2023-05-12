@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Navigator />
       <Header id="header" siteTitle="Home" />
       <StyledButton>
-        <Link key="edit" href='paypal.me/luckyduckystudio'><Trans>Paypal</Trans><span></span></Link>
+        <a href="http://paypal.me/luckyduckystudio"><Trans>Paypal</Trans><span></span></a>
       </StyledButton>
       <About id="about" />
       <Services id="services" />
