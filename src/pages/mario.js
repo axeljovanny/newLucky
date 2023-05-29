@@ -1,5 +1,5 @@
 import React from "react" // Libreria de React
-import { SAbout, SBaner, SBoton, SContenedorPrincipal, SContenido, SFooter, SHeader,SNav, SPortafolio, SRedes, SServicios, STeam } from "../styles/js/mario/mario";
+import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio} from "../styles/js/mario/mario";
 
 
 //Pagina principal Mario
@@ -11,25 +11,54 @@ const MarioPage = () => {
         <SHeader>
 
           <SNav>
+            <SLogo>
+              <p> LOGO</p>
+            </SLogo>
 
-          <h3> logo</h3>
-          
-          
-          
-        
-          
-          <SBoton>
-            <h3> BOTON </h3>
-          </SBoton>
+
+
+
+
+
+            <SIdioma>
+              <a> ESP</a>
+              <a> ENG</a>
+            </SIdioma>
           </SNav>
 
           <SContenido>
-          <SRedes>
-            <h3> REDES</h3>
-          </SRedes>
-          <SBaner>
-            <h3> BANER  </h3>
-          </SBaner>
+            <SHeaderIzquierda>
+
+              <SAnimacionHomeIzq></SAnimacionHomeIzq>
+
+              <SRedes>
+            
+               <a> FB </a>
+               <a> WSP </a>
+               <a> IG </a>
+
+
+              </SRedes>
+
+            </SHeaderIzquierda>
+
+
+            <SInicioYCervicios>
+              <STextoInicio> 
+                <p>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </p>
+                <SAnimacionCentral> </SAnimacionCentral>
+                <SAnimacionTextoInicio> </SAnimacionTextoInicio>
+              </STextoInicio>
+
+              <STextoServiciosHome> 
+             <p>BRANDING/ PRODUCCION/ DESARROLLO WEB</p> 
+              </STextoServiciosHome>
+
+
+            </SInicioYCervicios>
+            <SHeaderDerecha>
+            <SAnimacionHomeDer></SAnimacionHomeDer>
+            </SHeaderDerecha>
           </SContenido>
 
 
