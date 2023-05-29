@@ -12,7 +12,7 @@ export const SContenedorPrincipal = styled.div`
  /* Comentario en estilos */
 width: 100vw;    /* ancho de mi pagina    */ 
 height: auto;    /* largo de mi pagina */
-background:  none; /* color de fondo*/
+background: white; /* color de fondo*/
 `
 
 
@@ -116,6 +116,8 @@ justify-content:center;
 align-items: center;
 text-align: center;
 
+position: relative;
+
 `
 
 export const SAnimacionCentral  =styled.div`
@@ -135,12 +137,17 @@ export const SAnimacionTextoInicio  =styled.div`
 
 width: 50%;    // ancho de mi pagina    
 height: 50%;    // largo de mi pagina
-background: none; //color de fondo
+background: aqua; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: right;
 align-items: start;
+
 border: 1px solid #C00;
+
+position: absolute;
+right: -50px;
+top: -100px;
 `
 
 export const STextoServiciosHome  =styled.div`
