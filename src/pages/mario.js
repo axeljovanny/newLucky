@@ -45,7 +45,7 @@ const MarioPage = () => {
 
             <SInicioYCervicios>
               <STextoInicio> 
-                <p>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </p>
+                <h1>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </h1>
                 <SAnimacionCentral> </SAnimacionCentral>
                 <SAnimacionTextoInicio> </SAnimacionTextoInicio>
               </STextoInicio>
