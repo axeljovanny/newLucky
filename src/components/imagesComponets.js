@@ -1,8 +1,7 @@
 import React from "react"
 //import { Image } from "./"
 import { StaticImage } from "gatsby-plugin-image"
-import "../styles/css/images.css"
-
+import "../styles/css/rediseño.css"
 
 
 
@@ -154,8 +153,8 @@ export function IStickerBorrego() {
     layout="fullWidth"
     quality='90'
     formats={['auto', 'webp', 'avif']}
-    width={100}
-    height={100}
+    className="imgBorrego"
+
     />
 
 }

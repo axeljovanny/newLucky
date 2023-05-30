@@ -1,0 +1,7 @@
+.imgBorrego {
+    width: 50%;
+    margin-top: 3em;
+  }
+  .imgBorrego img {
+    object-fit: cover;
+  }
