@@ -109,7 +109,8 @@ export const STextoInicio  =styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 75%;    // largo de mi pagina
-background: red; //color de fondo
+background: none; //color de fondo
+
 display: flex;  // utilizar las funciones de flex
 flex-direction:column;
 justify-content:center;
@@ -117,6 +118,15 @@ align-items: center;
 text-align: center;
 
 position: relative;
+padding: 20%;
+h1{
+    background:none;
+    font-size: 3em;
+    text-align: left;
+}
+
+
+
 
 `
 
@@ -130,6 +140,9 @@ display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
 border: 1px solid #C00;
+position: absolute;
+right: 0%;
+top: 0%;
 `
 
 export const SAnimacionTextoInicio  =styled.div`
@@ -137,7 +150,7 @@ export const SAnimacionTextoInicio  =styled.div`
 
 width: 50%;    // ancho de mi pagina    
 height: 50%;    // largo de mi pagina
-background: aqua; //color de fondo
+background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: right;
@@ -146,8 +159,8 @@ align-items: start;
 border: 1px solid #C00;
 
 position: absolute;
-right: -50px;
-top: -100px;
+right: 0;
+bottom:0;
 `
 
 export const STextoServiciosHome  =styled.div`
@@ -200,6 +213,13 @@ display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
 flex-direction: column;
+
+a{
+margin: 5px 0px;
+
+}
+
+
 `
 
 
