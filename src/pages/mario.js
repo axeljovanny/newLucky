@@ -1,5 +1,8 @@
 import React from "react" // Libreria de React
 import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
+import { IFondoHeader } from "../components/imagesComponets";
+
+
 
 
 //Pagina principal Mario
@@ -7,9 +10,11 @@ const MarioPage = () => {
   return (
     //Aqui se agrega todo lo que va en tu pagina
     <>
-      <SContenedorPrincipal>
-        <SHeader>
+      
 
+      <SContenedorPrincipal>
+        <IFondoHeader/>
+        <SHeader>
           <SNav>
             <SNavButton>
               <p>Boton</p>

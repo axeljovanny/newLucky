@@ -9,12 +9,16 @@ Nomenclatura de Estilos:
 */
 
 
+
 export const SContenedorPrincipal = styled.div`
  /* Comentario en estilos */
 width: 100vw;    /* ancho de mi pagina    */ 
 height: auto;    /* largo de mi pagina */
 background: white; /* color de fondo*/
 
+${above.medium`
+    
+  `}
 ${above.large`
     
   `}
@@ -217,7 +221,6 @@ bottom:0;
 ${above.large`
     width: 30%;    // ancho de mi pagina    
     height: 20%;
-
     right: 25%;
     bottom: 30%;
   `}

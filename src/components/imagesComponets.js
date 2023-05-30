@@ -127,9 +127,22 @@ export function ImgFooterMovil() {
         quality='90'
         formats={['auto', 'webp', 'avif']}
         className="imgFooter"
-
     />
 
 }
+
+export function IFondoHeader() {
+    return <StaticImage
+    src="../images/rediseño/Fondos/Fondo Claro.jpg"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    />
+
+}
+
 
 
