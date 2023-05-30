@@ -130,7 +130,7 @@ export function ImgFooterMovil() {
     />
 
 }
-
+// imagnes rediseño
 export function IFondoHeader() {
     return <StaticImage
     src="../images/rediseño/Fondos/Fondo Claro.jpg"
@@ -145,4 +145,18 @@ export function IFondoHeader() {
 }
 
 
+export function IStickerBorrego() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/sticker_borrego.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    width={100}
+    height={100}
+    />
+
+}
 
