@@ -1,5 +1,5 @@
 import React from "react" // Libreria de React
-import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio} from "../styles/js/mario/mario";
+import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
 
 
 //Pagina principal Mario
@@ -11,53 +11,42 @@ const MarioPage = () => {
         <SHeader>
 
           <SNav>
+            <SNavButton>
+              <p>Boton</p>
+            </SNavButton>
             <SLogo>
               <p> LOGO</p>
             </SLogo>
 
-
-
-
-
-
             <SIdioma>
               <a> ESP</a>
+              <p> | </p>
               <a> ENG</a>
             </SIdioma>
           </SNav>
 
           <SContenido>
             <SHeaderIzquierda>
-
               <SAnimacionHomeIzq></SAnimacionHomeIzq>
-
               <SRedes>
-            
-               <a> FB </a>
-               <a> WSP </a>
-               <a> IG </a>
-
-
+                <a> FB </a>
+                <a> WSP </a>
+                <a> IG </a>
               </SRedes>
-
             </SHeaderIzquierda>
-
-
             <SInicioYCervicios>
-              <STextoInicio> 
+              <STextoInicio>
                 <h1>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </h1>
                 <SAnimacionCentral> </SAnimacionCentral>
                 <SAnimacionTextoInicio> </SAnimacionTextoInicio>
               </STextoInicio>
 
-              <STextoServiciosHome> 
-             <p>BRANDING/ PRODUCCION/ DESARROLLO WEB</p> 
+              <STextoServiciosHome>
+                <p>BRANDING/ PRODUCCION/ DESARROLLO WEB</p>
               </STextoServiciosHome>
-
-
             </SInicioYCervicios>
             <SHeaderDerecha>
-            <SAnimacionHomeDer></SAnimacionHomeDer>
+              <SAnimacionHomeDer></SAnimacionHomeDer>
             </SHeaderDerecha>
           </SContenido>
 

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { above } from '../index'
 
 /*
 Nomenclatura de Estilos:
@@ -13,13 +14,17 @@ export const SContenedorPrincipal = styled.div`
 width: 100vw;    /* ancho de mi pagina    */ 
 height: auto;    /* largo de mi pagina */
 background: white; /* color de fondo*/
+
+${above.large`
+    
+  `}
 `
 
 
 
 
 
- /* -----------INICIO SECCION HEADER ---------------- */
+/* -----------INICIO SECCION HEADER ---------------- */
 
 export const SHeader = styled.div`
  /* Comentario en estilos */
@@ -39,7 +44,7 @@ flex-flow: row wrap; // utilizar filas y columnas y saltar de linea si no cabe
 
 /*+++ INICIA SECCION NAV +++*/
 
-export const SNav= styled.div`
+export const SNav = styled.div`
  /* Comentario en estilos */
 
 width: 100%;    // ancho de mi pagina  
@@ -50,29 +55,62 @@ justify-content: flex-end;
 align-items: center;
 `
 
-export const SLogo= styled.div`
- /* Comentario en estilos */
+export const SLogo = styled.div`
+display: none;
 
-width: 70%;    // ancho de mi pagina  
-height: 100%;    // largo de mi pagina
-background: none;  /* color de fondo*/
-display: flex;  // utilizar las funciones de flex
-justify-content:center;
-align-items:center ;
-flex-direction: row;
+
+${above.large`
+    width: 70%; 
+    height: 100%; 
+    background: none;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    flex-direction: row;
+  `}
+
 `
 
-export const SIdioma= styled.div`
+export const SIdioma = styled.div`
  /* Comentario en estilos */
 
-width: 15%;    // ancho de mi pagina  
+width: 50%;    // ancho de mi pagina  
 height: 100%;    // largo de mi pagina
 background: none;  /* color de fondo*/
 display: flex;  // utilizar las funciones de flex
-padding: 2%;
-justify-content:center;
+padding: 10%;
+justify-content:flex-end;
 align-items:center ;
 flex-direction: row;
+
+a{
+    padding: 5%;
+}
+
+${above.large`
+    width: 15%;    // ancho de mi pagina  
+    justify-content:center;
+
+  `}
+
+`
+
+export const SNavButton = styled.div`
+width: 50%;    // ancho de mi pagina  
+height: 100%;    // largo de mi pagina
+background: red;  /* color de fondo*/
+display: flex;  // utilizar las funciones de flex
+justify-content:flex-start;
+padding: 10%;
+align-items:center ;
+
+${above.large`
+    width: 15%;    // ancho de mi pagina  
+    padding: 0;
+    justify-content:center;
+
+  `}
+
 `
 
 
@@ -82,6 +120,20 @@ flex-direction: row;
 /*+++ INICIA SECCION BANER +++*/
 
 export const SContenido = styled.div`
+width: 100%;    // ancho de mi pagina  
+height: 80%;    // largo de mi pagina
+display: flex;  // utilizar las funciones de flex: ;
+flex-flow: column-reverse wrap ;
+
+${above.large`
+    background: none;  /* color de fondo*/
+    flex-flow: column wrap ;
+    justify-content: space-around;
+    align-items:center;
+  `}
+
+`
+export const SInicioYCervicios = styled.div`
  /* Comentario en estilos */
 
  width: 100%;    // ancho de mi pagina  
@@ -89,22 +141,16 @@ height: 80%;    // largo de mi pagina
 background: none;  /* color de fondo*/
 display: flex;  // utilizar las funciones de flex: ;
 flex-wrap: wrap;
-justify-content: space-around;
-align-items:center;
-`
-export const SInicioYCervicios= styled.div`
- /* Comentario en estilos */
-
- width: 70%;    // ancho de mi pagina  
-height: 100%;    // largo de mi pagina
-background: none;  /* color de fondo*/
-display: flex;  // utilizar las funciones de flex: ;
-flex-wrap: wrap;
 justify-content: center;
 align-items:center;
+${above.large`
+    width: 70%;    // ancho de mi pagina    
+    height: 100%;  
+    
+  `}
 `
 
-export const STextoInicio  =styled.div`
+export const STextoInicio = styled.div`
  /* Comentario en estilos */
 
 width: 100%;    // ancho de mi pagina    
@@ -130,40 +176,54 @@ h1{
 
 `
 
-export const SAnimacionCentral  =styled.div`
+export const SAnimacionCentral = styled.div`
  /* Comentario en estilos */
 
-width: 25%;    // ancho de mi pagina    
-height: 28%;    // largo de mi pagina
+width: 40%;    // ancho de mi pagina    
+height: 40%;    // largo de mi pagina
 background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
 border: 1px solid #C00;
 position: absolute;
-right: 0%;
-top: 0%;
+right: -10%;
+top: -10%;
+${above.large`
+    width: 25%;    // ancho de mi pagina    
+    height: 28%; 
+    right: 0%;
+    top: 0%;
+  `}
 `
 
-export const SAnimacionTextoInicio  =styled.div`
+export const SAnimacionTextoInicio = styled.div`
  /* Comentario en estilos */
 
-width: 50%;    // ancho de mi pagina    
-height: 50%;    // largo de mi pagina
-background: none; //color de fondo
+width: 100%;    // ancho de mi pagina    
+height: 20%;    // largo de mi pagina
+background: yellow; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: right;
-align-items: start;
+align-items: flex-start;
 
 border: 1px solid #C00;
 
 position: absolute;
 right: 0;
 bottom:0;
+
+${above.large`
+    width: 30%;    // ancho de mi pagina    
+    height: 20%;
+
+    right: 25%;
+    bottom: 30%;
+  `}
 `
 
-export const STextoServiciosHome  =styled.div`
+export const STextoServiciosHome = styled.div`
  /* Comentario en estilos */
 
 width: 100%;    // ancho de mi pagina    
@@ -182,42 +242,61 @@ align-items: center;
 export const SHeaderIzquierda = styled.div`
  /* Comentario en estilos */
 
-width: 15%;    // ancho de mi pagina    
-height: 100%;    // largo de mi pagina
+width: 100%;    // ancho de mi pagina    
+height: 20%;    // largo de mi pagina
 background: none ; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
+position: relative;
+
+${above.large`
+    width: 15%;    // ancho de mi pagina    
+    height: 100%;  
+    justify-content: center;
+    
+  `}
 `
 
 
 export const SAnimacionHomeIzq = styled.div`
  /* Comentario en estilos */
 
-width: 90%;    // ancho de mi pagina    
-height: 35%;    // largo de mi pagina
+width: 40%;    // ancho de mi pagina    
+height: 100%;    // largo de mi pagina
 background: none ; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
 border: 1px solid #C00;
+position: absolute;
+left: -10%;
+bottom: -10%;
+
+${above.large`
+    width: 90%;    // ancho de mi pagina    
+    height: 35%; 
+    position: static;
+  `}
 `
+
 export const SRedes = styled.div`
- /* Comentario en estilos */
+display: none;  // se oculta
 
-width: 50%;    // ancho de mi pagina    
-height: 45%;    // largo de mi pagina
-background: none; //color de fondo
-display: flex;  // utilizar las funciones de flex
-justify-content: center;
-align-items: center;
-flex-direction: column;
+${above.large`
+    width: 50%;    // ancho de mi pagina    
+    height: 45%;    // largo de mi pagina
+    background: none; //color de fondo
+    display: flex;  // utilizar las funciones de flex
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-a{
-margin: 5px 0px;
-
-}
+    a{
+    margin: 5px 0px;
+    }
+  `}
 
 
 `
@@ -227,32 +306,34 @@ margin: 5px 0px;
 /*+++ INICIA SECCION HEADER DERECHA+++*/
 
 export const SHeaderDerecha = styled.div`
- /* Comentario en estilos */
 
-width: 15%;    // ancho de mi pagina    
-height: 100%;    // largo de mi pagina
-background: none; //color de fondo
-display: flex;  // utilizar las funciones de flex
-justify-content: flex-end;
-align-items: flex-end;
+display: none;  // utilizar las funciones de flex
+
+${above.large`
+    width: 15%;    // ancho de mi pagina    
+    height: 100%;    // largo de mi pagina
+    background: none; //color de fondo
+    display: flex;  // utilizar las funciones de flex
+    justify-content: flex-end;
+    align-items: flex-end;
+  `}
+
 `
 export const SAnimacionHomeDer = styled.div`
- /* Comentario en estilos */
-
-width: 90%;    // ancho de mi pagina    
-height: 30%;    // largo de mi pagina
-background: none ; //color de fondo
-display: flex;  // utilizar las funciones de flex
-justify-content: center;
-align-items: center;
-border: 1px solid #C00;
+    width: 90%;    // ancho de mi pagina    
+    height: 30%;    // largo de mi pagina
+    background: none ; //color de fondo
+    display: flex;  // utilizar las funciones de flex
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C00;// utilizar las funciones de flex
 `
 
 
 
 
 
- /* -----------FIN SECCION HEADER ---------------- */
+/* -----------FIN SECCION HEADER ---------------- */
 
 export const SAbout = styled.div`
  /* Comentario en estilos */
@@ -272,7 +353,7 @@ export const SPortafolio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 100vh;    // largo de mi pagina
-background: yellow; //color de fondo
+background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
