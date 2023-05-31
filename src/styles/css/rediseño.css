@@ -1,7 +1,35 @@
 .imgBorrego {
-    width: 50%;
-    margin-top: 3em;
+    width: 90%;
+    
   }
   .imgBorrego img {
+    object-fit: cover;
+  }
+
+
+
+
+  .imgLap {
+    width: 90% ;
+  }
+  .imgLap img {
+    object-fit: cover;
+  }
+
+
+
+  .imgCorazon  {
+    width: 90% ;
+  }
+  .imgCorazon img {
+    object-fit: cover;
+  }
+
+
+  
+  .imgMenu  {
+    width: 20% ;
+  }
+  .imgMenu img {
     object-fit: cover;
   }

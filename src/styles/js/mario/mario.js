@@ -69,7 +69,7 @@ ${above.large`
     background: none;
     display: flex;
     justify-content:center;
-    align-items:center ;
+    align-items: center;
     flex-direction: row;
   `}
 
@@ -93,7 +93,7 @@ a{
 
 ${above.large`
     width: 15%;    // ancho de mi pagina  
-    justify-content:center;
+    justify-content:flex-end;
 
   `}
 
@@ -102,14 +102,14 @@ ${above.large`
 export const SNavButton = styled.div`
 width: 50%;    // ancho de mi pagina  
 height: 100%;    // largo de mi pagina
-background: red;  /* color de fondo*/
+background: none;  /* color de fondo*/
 display: flex;  // utilizar las funciones de flex
 justify-content:flex-start;
 padding: 10%;
 align-items:center ;
 
 ${above.large`
-    width: 15%;    // ancho de mi pagina  
+    width: 15%;
     padding: 0;
     justify-content:center;
 
@@ -206,7 +206,7 @@ export const SAnimacionTextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 20%;    // largo de mi pagina
-background: yellow; //color de fondo
+background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: right;

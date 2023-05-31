@@ -1,6 +1,6 @@
 import React from "react" // Libreria de React
 import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
-import { IFondoHeader, IStickerBorrego } from "../components/imagesComponets";
+import { IFondoHeader, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu } from "../components/imagesComponets";
 
 
 
@@ -17,7 +17,7 @@ const MarioPage = () => {
         <SHeader>
           <SNav>
             <SNavButton>
-              <p>Boton</p>
+            <IconoMenu/>
             </SNavButton>
             <SLogo>
               <p> LOGO</p>
@@ -44,7 +44,9 @@ const MarioPage = () => {
             <SInicioYCervicios>
               <STextoInicio>
                 <h1>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </h1>
-                <SAnimacionCentral> </SAnimacionCentral>
+                <SAnimacionCentral> 
+                  < IStickerLap/>
+                 </SAnimacionCentral>
                 <SAnimacionTextoInicio> </SAnimacionTextoInicio>
               </STextoInicio>
 
@@ -53,7 +55,9 @@ const MarioPage = () => {
               </STextoServiciosHome>
             </SInicioYCervicios>
             <SHeaderDerecha>
-              <SAnimacionHomeDer></SAnimacionHomeDer>
+              <SAnimacionHomeDer>
+                <IStickerCorazon/>
+              </SAnimacionHomeDer>
             </SHeaderDerecha>
           </SContenido>
 

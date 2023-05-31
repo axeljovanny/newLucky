@@ -159,3 +159,52 @@ export function IStickerBorrego() {
 
 }
 
+
+export function IStickerLap() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/sticker_lap.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgLap"
+
+    />
+
+}
+
+
+
+export function IStickerCorazon() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/sticker_corazon.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgCorazon"
+
+    />
+
+}
+
+
+
+export function IconoMenu() {
+    return <StaticImage
+    src="../images/rediseño/iconos/Menu.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgMenu"
+
+    />
+
+}
