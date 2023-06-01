@@ -11,10 +11,18 @@
 
   .imgLap {
     width: 90% ;
+
   }
   .imgLap img {
     object-fit: cover;
   }
+  
+ .imgLap {
+  transform: rotateY(200deg) rotate(-15deg);
+ }
+  
+
+  
 
 
 
@@ -31,5 +39,14 @@
     width: 20% ;
   }
   .imgMenu img {
+    object-fit: cover;
+  }
+
+
+  
+  .imgILogoTrebol{
+    width: 8% ;
+  }
+  .imgILogoTrebol {
     object-fit: cover;
   }

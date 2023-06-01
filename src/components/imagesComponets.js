@@ -208,3 +208,20 @@ export function IconoMenu() {
     />
 
 }
+
+
+
+export function ILogoTrebol() {
+    return <StaticImage
+    src="../images/rediseño/logos/Isotipo_Black.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgILogoTrebol"
+
+    />
+
+}
