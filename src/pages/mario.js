@@ -13,8 +13,8 @@ const MarioPage = () => {
       
 
       <SContenedorPrincipal>
-        <IFondoHeader/>
         <SHeader>
+        <IFondoHeader/>
           <SNav>
             <SNavButton>
             <IconoMenu/>

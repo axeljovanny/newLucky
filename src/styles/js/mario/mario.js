@@ -14,7 +14,6 @@ export const SContenedorPrincipal = styled.div`
  /* Comentario en estilos */
 width: 100vw;    /* ancho de mi pagina    */ 
 height: auto;    /* largo de mi pagina */
-background: white; /* color de fondo*/
 
 ${above.medium`
     
@@ -32,10 +31,11 @@ ${above.large`
 
 export const SHeader = styled.div`
  /* Comentario en estilos */
+ position: relative;
+  width: 100%;
+  height: 100vh;
 
-width: 100%;    // ancho de mi pagina  
-height: 100vh;    // largo de mi pagina
-background: none;  /* color de fondo*/
+ /* color de fondo*/
 display: flex;  // utilizar las funciones de flex
 justify-content: center; // centrar contenido
 align-items: center; // alinear el contenido

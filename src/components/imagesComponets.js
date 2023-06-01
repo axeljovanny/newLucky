@@ -134,11 +134,18 @@ export function IFondoHeader() {
     return <StaticImage
     src="../images/rediseño/Fondos/Fondo Claro.jpg"
     alt="Fondo de nuestro header"
+    layout="fullWidth"
     loading="eager"
     placeholder="blurred"
-    layout="fullWidth"
-    quality='90'
+    quality='100'
     formats={['auto', 'webp', 'avif']}
+    style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+      }}
     />
 
 }
@@ -151,7 +158,7 @@ export function IStickerBorrego() {
     loading="eager"
     placeholder="blurred"
     layout="fullWidth"
-    quality='90'
+    quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgBorrego"
 
