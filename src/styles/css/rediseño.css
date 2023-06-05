@@ -1,11 +1,17 @@
+
+/**xxxxxxxxxxxxxxx  estilos en movil xxxxxxxxxxxxxxxxxxxx*/
+
+
 .imgBorrego {
     width: 100%;
+    
+
   }
   .imgBorrego img {
     object-fit: cover;
   }
 
-  .imgBorrego {transform: rotate(20deg);
+  .imgBorrego {transform: rotate(-15deg);
 
 
   }
@@ -14,7 +20,8 @@
 
 
   .imgLap {
-    width: 90% ;
+    width: 100% ;
+   
 
   }
   .imgLap img {
@@ -22,7 +29,7 @@
   }
   
  .imgLap {
-  transform: rotateY(200deg) rotate(-15deg);
+  transform: rotateY(200deg) rotate(-20deg);
  }
   
 
@@ -86,4 +93,104 @@
   }
   .imgGrafiiti{
     object-fit: cover;
+  }
+
+/**xxxxxxxxxxxxxxx  estilos en web xxxxxxxxxxxxxxxxxxxx*/
+
+  @media only screen and (min-width: 768px) {
+    .imgBorrego {
+      width: 100%;
+      
+      
+    }
+    .imgBorrego img {
+      object-fit: cover;
+    }
+  
+    .imgBorrego {transform: rotate(20deg);
+  
+  
+    }
+  
+  
+  
+  
+    .imgLap {
+      width: 100% ;
+  
+    }
+    .imgLap img {
+      object-fit: cover;
+    }
+    
+   .imgLap {
+    transform: rotateY(200deg) rotate(-15deg);
+   }
+    
+  
+    
+  
+    .imgCorazon  {
+      width: 100% ;
+    }
+    .imgCorazon img {
+      object-fit: cover;
+      
+    }
+     
+    .imgCorazon {
+      transform: rotate(-20deg);
+    }
+  
+    
+    .imgMenu  {
+      width: 20% ;
+    }
+    .imgMenu img {
+      object-fit: cover;
+    }
+  
+  
+    
+    .imgILogoTrebol{
+      width: 8% ;
+    }
+    .imgILogoTrebol {
+      object-fit: cover;
+    }
+  
+  
+    .imgFacebook{
+      width: 50%;
+    }
+    .imgFacebook{
+      object-fit: cover;
+    }
+  
+  
+    .imgInstagram{
+      width: 50%;
+    }
+    .imgInstagram{
+      object-fit: cover;
+    }
+  
+    
+    .imgWhatsApp{
+      width: 50%;
+    }
+    .imgWhatsApp{
+      object-fit: cover;
+    }
+  
+  
+    .imgGrafiiti{
+      width: 50%;
+    }
+    .imgGrafiiti{
+      object-fit: cover;
+    }
+  
+
+
   }

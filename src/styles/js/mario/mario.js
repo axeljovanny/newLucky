@@ -183,7 +183,7 @@ export const SAnimacionCentral = styled.div`
 
 width: 40%;    // ancho de mi pagina    
 height: 40%;    // largo de mi pagina
-background: none; //color de fondo
+background: none ; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
@@ -191,11 +191,14 @@ border: 1px solid none;
 position: absolute;
 right: -10%;
 top: -10%;
+transform: scale(1.3);
+
 ${above.large`
     width: 25%;    // ancho de mi pagina    
     height: 28%; 
-    right: 0%;
+    right: -10%;
     top: 0%;
+    transform: scale(1.2;
   `}
 `
 
@@ -275,12 +278,15 @@ align-items: center;
 border: 1px solid none;
 position: absolute;
 left: -10%;
-bottom: -10%;
+bottom: 0%;
+transform: scale(1.2);
+
 
 ${above.large`
     width: 90%;    // ancho de mi pagina    
-    height: 35%; 
+    height: 40%; 
     position: static;
+    transform: scale(1.3);
   `}
 `
 
@@ -309,6 +315,7 @@ ${above.large`
 /*+++ INICIA SECCION HEADER DERECHA+++*/
 
 export const SHeaderDerecha = styled.div`
+position: relative;
 
 display: none;  // utilizar las funciones de flex
 
@@ -329,7 +336,13 @@ export const SAnimacionHomeDer = styled.div`
     display: flex;  // utilizar las funciones de flex
     justify-content: center;
     align-items: center;
-    border: 1px solid #C00;// utilizar las funciones de flex
+    border: none;// utilizar las funciones de flex
+    transform: scale(1.3);
+    position: absolute;
+    top: 77%;
+    left: 25%;
+
+    
 `
 
 
