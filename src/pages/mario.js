@@ -1,6 +1,7 @@
 import React from "react" // Libreria de React
 import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
 import { IFacebook, IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, Instagram, IWhatsApp, IGrafiiti } from "../components/imagesComponets";
+import { StaticImage } from "gatsby-plugin-image";
 
 
 
@@ -10,17 +11,17 @@ const MarioPage = () => {
   return (
     //Aqui se agrega todo lo que va en tu pagina
     <>
-      
+
 
       <SContenedorPrincipal>
         <SHeader>
-        <IFondoHeader/>
+          <IFondoHeader />
           <SNav>
             <SNavButton>
-            <IconoMenu/>
+              <IconoMenu />
             </SNavButton>
             <SLogo>
-             <ILogoTrebol/>
+              <ILogoTrebol />
             </SLogo>
 
             <SIdioma>
@@ -32,23 +33,23 @@ const MarioPage = () => {
 
           <SContenido>
             <SHeaderIzquierda>
-              <SAnimacionHomeIzq> 
-                <IStickerBorrego/>
+              <SAnimacionHomeIzq>
+                <IStickerBorrego />
               </SAnimacionHomeIzq>
               <SRedes>
-                <IFacebook/>
-                <IWhatsApp/>
-                < Instagram/>
+                <IFacebook />
+                <IWhatsApp />
+                < Instagram />
               </SRedes>
             </SHeaderIzquierda>
             <SInicioYCervicios>
               <STextoInicio>
                 <h1>  LA CREATIVIDAD ES UN REFLEJO DE NUESTRA </h1>
-                <SAnimacionCentral> 
-                  < IStickerLap/>
-                 </SAnimacionCentral>
-                <SAnimacionTextoInicio> 
-                <IGrafiiti/>
+                <SAnimacionCentral>
+                  < IStickerLap />
+                </SAnimacionCentral>
+                <SAnimacionTextoInicio>
+                  <IGrafiiti/>
                 </SAnimacionTextoInicio>
               </STextoInicio>
 
@@ -58,7 +59,7 @@ const MarioPage = () => {
             </SInicioYCervicios>
             <SHeaderDerecha>
               <SAnimacionHomeDer>
-                <IStickerCorazon/>
+                <IStickerCorazon />
               </SAnimacionHomeDer>
             </SHeaderDerecha>
           </SContenido>

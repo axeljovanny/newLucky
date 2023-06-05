@@ -207,13 +207,11 @@ export const SAnimacionTextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 20%;    // largo de mi pagina
-background: yellow; //color de fondo
+background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
-justify-content: right;
-align-items: flex-start;
-
-border: 1px solid #C00;
+justify-content: center;
+align-items: center;
 
 position: absolute;
 right: 0;
