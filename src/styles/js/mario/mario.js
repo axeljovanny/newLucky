@@ -86,6 +86,7 @@ padding: 10%;
 justify-content:flex-end;
 align-items:center ;
 flex-direction: row;
+position: relative;
 
 a{
     padding: 5%;
@@ -175,9 +176,6 @@ h1{
     text-align: left;
 }
 
-
-
-
 `
 
 export const SAnimacionCentral = styled.div`
@@ -236,6 +234,8 @@ display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+position: relative;
+
 `
 
 
