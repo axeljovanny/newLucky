@@ -291,10 +291,11 @@ ${above.large`
 export const SRedes = styled.div`
 display: none;  // se oculta
 
+
 ${above.large`
-    width: 50%;    // ancho de mi pagina    
+    width: 35%;    // ancho de mi pagina    
     height: 45%;    // largo de mi pagina
-    background: none; //color de fondo
+    background: red; //color de fondo
     display: flex;  // utilizar las funciones de flex
     justify-content: center;
     align-items: center;
