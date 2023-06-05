@@ -295,14 +295,14 @@ display: none;  // se oculta
 ${above.large`
     width: 35%;    // ancho de mi pagina    
     height: 45%;    // largo de mi pagina
-    background: red; //color de fondo
+    background: none; //color de fondo
     display: flex;  // utilizar las funciones de flex
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    a{
-    margin: 5px 0px;
+    div{
+    margin: 4px 0px;
     }
   `}
 

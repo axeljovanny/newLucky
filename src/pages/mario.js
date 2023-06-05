@@ -37,16 +37,9 @@ const MarioPage = () => {
                 <IStickerBorrego />
               </SAnimacionHomeIzq>
               <SRedes>
-                <a>
                 <IFacebook />
-                </a>
-                <a>
                 <IWhatsApp />
-                </a>
-               <a>
-               < Instagram />
-               </a>
-               
+               <Instagram />
               </SRedes>
             </SHeaderIzquierda>
             <SInicioYCervicios>
