@@ -232,3 +232,66 @@ export function ILogoTrebol() {
     />
 
 }
+
+
+export function IFacebook() {
+    return <StaticImage
+    src="../images/rediseño/iconos/Facebook.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgFacebook"
+
+    />
+
+}
+
+export function Instagram() {
+    return <StaticImage
+    src="../images/rediseño/iconos/Instagram.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgInstagram"
+
+    />
+
+}
+
+export function IWhatsApp() {
+    return <StaticImage
+    src="../images/rediseño/iconos/WhatsApp.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgWhatsApp"
+
+    />
+
+}
+
+
+export function IGrafiiti() {
+    return <StaticImage
+    src="../images/rediseño/Stickers/Grafiiti 1.png"
+    alt="Fondo de nuestro header"
+    loading="eager"
+    placeholder="blurred"
+    layout="fullWidth"
+    quality='90'
+    formats={['auto', 'webp', 'avif']}
+    className="imgGrafiiti"
+
+    />
+
+}
+

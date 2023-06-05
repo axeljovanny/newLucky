@@ -189,7 +189,7 @@ background: none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
-border: 1px solid #C00;
+border: 1px solid none;
 position: absolute;
 right: -10%;
 top: -10%;
@@ -206,7 +206,7 @@ export const SAnimacionTextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 20%;    // largo de mi pagina
-background: none; //color de fondo
+background: yellow; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: right;
@@ -272,7 +272,7 @@ background: none ; //color de fondo
 display: flex;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
-border: 1px solid #C00;
+border: 1px solid none;
 position: absolute;
 left: -10%;
 bottom: -10%;

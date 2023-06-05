@@ -1,6 +1,6 @@
 import React from "react" // Libreria de React
 import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
-import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu } from "../components/imagesComponets";
+import { IFacebook, IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, Instagram, IWhatsApp, IGrafiiti } from "../components/imagesComponets";
 
 
 
@@ -36,9 +36,9 @@ const MarioPage = () => {
                 <IStickerBorrego/>
               </SAnimacionHomeIzq>
               <SRedes>
-                <a> FB </a>
-                <a> WSP </a>
-                <a> IG </a>
+                <IFacebook/>
+                <IWhatsApp/>
+                < Instagram/>
               </SRedes>
             </SHeaderIzquierda>
             <SInicioYCervicios>
@@ -47,7 +47,9 @@ const MarioPage = () => {
                 <SAnimacionCentral> 
                   < IStickerLap/>
                  </SAnimacionCentral>
-                <SAnimacionTextoInicio> </SAnimacionTextoInicio>
+                <SAnimacionTextoInicio> 
+                <IGrafiiti/>
+                </SAnimacionTextoInicio>
               </STextoInicio>
 
               <STextoServiciosHome>

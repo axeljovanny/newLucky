@@ -1,9 +1,13 @@
 .imgBorrego {
-    width: 90%;
-    
+    width: 100%;
   }
   .imgBorrego img {
     object-fit: cover;
+  }
+
+  .imgBorrego {transform: rotate(20deg);
+
+
   }
 
 
@@ -24,15 +28,16 @@
 
   
 
-
-
   .imgCorazon  {
     width: 90% ;
   }
   .imgCorazon img {
     object-fit: cover;
   }
-
+   
+  .imgCorazon {
+    transform: rotate(-20deg);
+  }
 
   
   .imgMenu  {
@@ -48,5 +53,37 @@
     width: 8% ;
   }
   .imgILogoTrebol {
+    object-fit: cover;
+  }
+
+
+  .imgFacebook{
+    width: 50%;
+  }
+  .imgFacebook{
+    object-fit: cover;
+  }
+
+
+  .imgInstagram{
+    width: 50%;
+  }
+  .imgInstagram{
+    object-fit: cover;
+  }
+
+  
+  .imgWhatsApp{
+    width: 50%;
+  }
+  .imgWhatsApp{
+    object-fit: cover;
+  }
+
+
+  .imgGrafiiti{
+    width: 50%;
+  }
+  .imgGrafiiti{
     object-fit: cover;
   }
