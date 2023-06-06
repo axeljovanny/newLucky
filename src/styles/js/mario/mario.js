@@ -292,17 +292,21 @@ export const SRedes = styled.div`
 display: none;  // se oculta
 
 
+
+
 ${above.large`
-    width: 35%;    // ancho de mi pagina    
-    height: 45%;    // largo de mi pagina
+    width: 30%;    // ancho de mi pagina    
+    height: 25%;    // largo de mi pagina
     background: none; //color de fondo
     display: flex;  // utilizar las funciones de flex
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translateY(-15%);
+
 
     div{
-    margin: 4px 0px;
+    margin: 2px 0px;
     }
   `}
 
