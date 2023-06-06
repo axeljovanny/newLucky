@@ -2,6 +2,10 @@ import React from "react" // Libreria de React
 import { SAbout, SInicioYCervicios, SContenedorPrincipal, SContenido, SFooter, SHeader, SIdioma, SLogo, SNav, SPortafolio, SServicios, STeam, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario";
 import { IFacebook, IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, Instagram, IWhatsApp, IGrafiiti } from "../components/imagesComponets";
 import { StaticImage } from "gatsby-plugin-image";
+import { BehanceIcon } from "../images/icons/icons";
+import '../styles/css/svg.css'
+import { colors } from "../utils/const";
+
 
 
 
@@ -37,6 +41,7 @@ const MarioPage = () => {
                 <IStickerBorrego />
               </SAnimacionHomeIzq>
               <SRedes>
+                <BehanceIcon fill={colors.black} className={"svgAbout"}/>
                 <IFacebook />
                 <IWhatsApp />
                <Instagram />

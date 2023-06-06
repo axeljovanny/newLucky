@@ -5,7 +5,7 @@ export const colors = {
     background: "none",
     softWhite: "#FFF9E9",
     darkBlue: "#00161D",
-    black: "#020202",
+    black: "#424242",
     white: "#FFFFFF",
     none: "none"
 

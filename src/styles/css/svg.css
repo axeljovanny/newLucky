@@ -20,6 +20,13 @@
   transform: translate(46%, 480%) scale(-0.3);
 }
 
+.svgAbout{
+  width: 50%;
+}
+.svgAbout img{
+  object-fit: contain;
+}
+
 @media (max-width: 1140px) {
   .line {
     display: none;
