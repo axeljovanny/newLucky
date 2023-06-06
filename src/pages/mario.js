@@ -58,7 +58,7 @@ const MarioPage = () => {
               </STextoInicio>
 
               <STextoServiciosHome>
-                <p>BRANDING/ PRODUCCION/ DESARROLLO WEB</p>
+                <p>BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;  DESARROLLO WEB</p>
               </STextoServiciosHome>
             </SInicioYCervicios>
             <SHeaderDerecha>

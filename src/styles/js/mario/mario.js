@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { above } from '../index'
+import { fonts } from "../../../utils/const"
 
 /*
 Nomenclatura de Estilos:
@@ -171,8 +172,9 @@ text-align: center;
 position: relative;
 padding: 20%;
 h1{
+  font-family: ${fonts.reciaB};
     background:none;
-    font-size: 3em;
+    font-size: 5em;
     text-align: left;
 }
 
@@ -236,6 +238,15 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 position: relative;
+
+p{
+
+  font-family: ${fonts.montExtraBold};
+font-size: 13px;
+
+}
+
+
 
 `
 
