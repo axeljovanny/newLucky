@@ -33,4 +33,17 @@ export const font = {
     light: "HelveticaLight",
     thin: "HelveticaThin",
     ultraLight: "HelveticaUltralight",
+
+    
+}
+
+export const fonts = {
+    montBold: "MontserratBlack",
+    montBlack: "MontserratBold",
+    montExtraBold: "MontserratExtraBold",
+    montExtraLight: "MontserratExtraLight",
+    montItalic: "MontserratItalic",
+    montLight: "MontserratLight",
+    monttMedium: "MontserratMedium",
+    reciaB:"ReciaBold",
 }
