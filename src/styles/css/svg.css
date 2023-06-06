@@ -21,9 +21,10 @@
 }
 
 .svgAbout{
-  width: 50%;
+  width: 60%;
+  margin: 5px;
 }
-.svgAbout img{
+.svgAbout svg{
   object-fit: contain;
 }
 

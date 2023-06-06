@@ -2,10 +2,10 @@ import React from "react"
 
 const FacebookIcon = ({ fill, className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="100px" height="100px">
-        <a href="https://www.facebook.com/lduckystudio" rel="noreferrer" target="_blank">
+        <a href="https://www.facebook.com/luckyducky.studio" rel="noreferrer" target="_blank">
             <path fill={fill} d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h10v-9h-3v-3h3v-1.611C16,9.339,17.486,8,20.021,8 c1.214,0,1.856,0.09,2.16,0.131V11h-1.729C19.376,11,19,11.568,19,12.718V14h3.154l-0.428,3H19v9h5c1.105,0,2-0.895,2-2V6 C26,4.895,25.104,4,24,4z" />
         </a>
-    </svg>
+    </svg> 
 
 );
 const Facebook2Icon = ({ fill, className }) => (
@@ -73,6 +73,10 @@ const MessengerIcon = ({ fill, className }) => (
         <path fill={fill} d="M 15 3 C 8.373 3 3 8.149 3 14.5 C 3 17.901215 4.5506695 20.947232 7 23.052734 L 7 28 L 11.835938 25.582031 C 12.845524 25.846308 13.903007 26 15 26 C 21.627 26 27 20.851 27 14.5 C 27 8.149 21.627 3 15 3 z M 13.861328 11.357422 L 16.8125 14.3125 L 22.083984 11.357422 L 16.138672 17.800781 L 13.255859 14.703125 L 7.8457031 17.730469 L 13.861328 11.357422 z" />
     </svg>
 );
+
+
+/*+++++++++++ este icono no da el icono de whatsapp, si no el de youtube*/
+
 const WhatsappIcon = ({ fill, className }) => (
     <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="100px" height="100px">
         <path fill={fill} d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z" />
