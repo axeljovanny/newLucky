@@ -174,8 +174,14 @@ padding: 20%;
 h1{
   font-family: ${fonts.reciaB};
     background:none;
-    font-size: 5em;
+    font-size: 2em;
     text-align: left;
+    line-height: 1.5em;
+}
+
+h1 > span {
+  font-size: 2em;
+  background: aqua;
 }
 
 `

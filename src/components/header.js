@@ -1,70 +1,67 @@
-import PropTypes from "prop-types"
 import React from "react"
-import { StyledHeader, StyledLogo, StyledTextHeader, StyledButtonRight, StyledVideo, StyledVideoMovil } from '../styles/js/header'
-import { LogoPrincipal } from "./imagesComponets"
-import { Trans } from 'gatsby-plugin-react-i18next';
-import { StyledLine } from "../styles/js/navigator";
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import FondoWebM from "../images/fondo.webm"
-import FondoMovilM from "../images/fondoMovil.webm"
-import Poster from "../images/fondo.png"
-import PosterMovil from "../images/fondoMovil.png"
-
+import { SInicioYCervicios, SContenido, SHeader, SIdioma, SLogo, SNav, STextoInicio, STextoServiciosHome, SAnimacionHomeIzq, SHeaderIzquierda, SHeaderDerecha, SRedes, SAnimacionHomeDer, SAnimacionCentral, SAnimacionTextoInicio, SNavButton } from "../styles/js/mario/mario"
+import { IFondoHeader, ILogoTrebol, IStickerBorrego, IStickerCorazon, IStickerLap, IconoMenu, IGrafiiti } from "./imagesComponets"
+import { BehanceIcon, FacebookIcon, InstagramIcon } from "../images/icons/icons"
+import { colors } from "../utils/const"
 import '../styles/css/svg.css'
-import { colors } from "../utils/const";
-import { Trebol } from '../images/icons/icons.js'
 
 
 const Header = ({ siteTitle }) => {
+    return (
+        <>
+            <SHeader>
+                <IFondoHeader />
+                <SNav>
+                    <SNavButton>
+                        <IconoMenu />
+                    </SNavButton>
+                    <SLogo>
+                        <ILogoTrebol />
+                    </SLogo>
 
-    if (siteTitle === 'Home') {
-        return (
-            <>
-                <StyledLine white></StyledLine>
-                <StyledVideo web>
-                    <video width="100%" autoplay="autoplay" muted loop poster={Poster}>
-                        <source src={FondoWebM} type="video/webm" />
-                    </video>
-                </StyledVideo>
+                    <SIdioma>
+                        <a> ESP</a>
+                        <p> | </p>
+                        <a> ENG</a>
+                    </SIdioma>
+                </SNav>
 
-                <StyledVideoMovil movil>
-                    <video width="100%" height="10%" autoplay="autoplay" muted loop poster={PosterMovil}>
-                        <source src={FondoMovilM} type="video/webm" />
-                    </video>
-                </StyledVideoMovil>
-                <StyledHeader>
+                <SContenido>
+                    <SHeaderIzquierda>
+                        <SAnimacionHomeIzq>
+                            <IStickerBorrego />
+                        </SAnimacionHomeIzq>
+                        <SRedes>
+                            <BehanceIcon fill={colors.black} className={"svgAbout"} />
+                            <FacebookIcon fill={colors.black} className={"svgAbout"} />
+                            <InstagramIcon fill={colors.black} className={"svgAbout"} />
+                        </SRedes>
+                    </SHeaderIzquierda>
+                    <SInicioYCervicios>
+                        <STextoInicio>
 
-                    <StyledLogo>
-                        <LogoPrincipal></LogoPrincipal>
-                    </StyledLogo>
-                    <StyledLogo movil>
-                        <Trebol fill={colors.softWhite}></Trebol>
-                    </StyledLogo>
-                    <StyledButtonRight>
-                        <AniLink cover to="work" bg="#00161D" direction="left">
-                            <Trans>WORK</Trans><span></span>
-                        </AniLink>
-                    </StyledButtonRight>
-                    <StyledTextHeader>
-                        <h5><Trans>WELCOME</Trans></h5>
-                        <h4><Trans>OUR</Trans></h4>
-                        <h3><Trans>POUND</Trans></h3>
-                    </StyledTextHeader>
-                </StyledHeader>
+                            <h1>LA <span>CREATIVIDAD</span> ES UN <span>REFLEJO</span> DE <span>NUESTRA</span> </h1>
+                            <SAnimacionCentral>
+                                < IStickerLap />
+                            </SAnimacionCentral>
+                            <SAnimacionTextoInicio>
+                                <IGrafiiti />
+                            </SAnimacionTextoInicio>
+                        </STextoInicio>
+                        <STextoServiciosHome>
+                            <p>BRANDING &nbsp; | &nbsp; PRODUCCION AUDIOVISUAL&nbsp; |&nbsp;  DESARROLLO WEB</p>
+                        </STextoServiciosHome>
+                    </SInicioYCervicios>
+                    <SHeaderDerecha>
+                        <SAnimacionHomeDer>
+                            <IStickerCorazon />
+                        </SAnimacionHomeDer>
+                    </SHeaderDerecha>
+                </SContenido>
+            </SHeader>
+        </>
+    )
 
-            </>
-        )
-    }
-
-}
-
-
-Header.propTypes = {
-    siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-    siteTitle: ``,
 }
 
 export default Header

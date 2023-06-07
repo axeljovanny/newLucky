@@ -12,11 +12,9 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <Navigator />
+     
       <Header id="header" siteTitle="Home" />
-      <StyledButton>
-        <a href="http://paypal.me/luckyduckystudio"><Trans>Paypal</Trans><span></span></a>
-      </StyledButton>
+  
       <About id="about" />
       <Services id="services" />
       <Footer id="footer" />
