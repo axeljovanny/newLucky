@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
                     </SLogo>
 
                     <SIdioma>
-                        <a> ESP</a>
+                        <a> ESP </a>
                         <p> | </p>
                         <a> ENG</a>
                     </SIdioma>
@@ -33,14 +33,14 @@ const Header = ({ siteTitle }) => {
                         </SAnimacionHomeIzq>
                         <SRedes>
                             <BehanceIcon fill={colors.black} className={"svgAbout"} />
-                            <FacebookIcon fill={colors.black} className={"svgAbout"} />
+                            <FacebookIcon fill={colors.black} className={"svgAbout"}/>
                             <InstagramIcon fill={colors.black} className={"svgAbout"} />
                         </SRedes>
                     </SHeaderIzquierda>
                     <SInicioYCervicios>
                         <STextoInicio>
 
-                            <h1>LA <span>CREATIVIDAD</span> ES UN <span>REFLEJO</span> DE <span>NUESTRA</span> </h1>
+                            <h1>LA <span>CREATIVIDAD</span> <span className="es">ES</span> UN <span>REFLEJO</span> DE <span>NUESTRA</span> </h1>
                             <SAnimacionCentral>
                                 < IStickerLap />
                             </SAnimacionCentral>

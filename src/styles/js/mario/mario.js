@@ -84,18 +84,57 @@ height: 100%;    // largo de mi pagina
 background: none;  /* color de fondo*/
 display: flex;  // utilizar las funciones de flex
 padding: 10%;
-justify-content:flex-end;
+justify-content:center;
 align-items:center ;
 flex-direction: row;
 position: relative;
 
-a{
-    padding: 5%;
+a {
+  background-color: none;
+  margin: 5%;
+  font-family: ${fonts.reciaB};
+    font-size: 20px;
+    
+    
+}
+
+p{
+  font-family: ${fonts.montExtraBold};
+  font-size: 20px;
+  transform: translateY(-10%);
+  
+
+  
+  
+
+
 }
 
 ${above.large`
     width: 15%;    // ancho de mi pagina  
-    justify-content:flex-end;
+    padding: 0;
+    justify-content: flex-start;
+   
+
+    a {
+  
+  margin: 3%;
+ 
+    font-size: 20px;
+    
+    
+}
+
+p{
+  
+  
+  transform: translateY(-10%);
+  
+
+
+}
+    
+    
 
   `}
 
@@ -171,17 +210,26 @@ text-align: center;
 
 position: relative;
 padding: 20%;
+
 h1{
   font-family: ${fonts.reciaB};
     background:none;
     font-size: 2em;
-    text-align: left;
+    text-align: center;
     line-height: 1.5em;
 }
 
 h1 > span {
   font-size: 2em;
-  background: aqua;
+  background: none;
+
+}
+
+h1 > span.es{
+
+transform: translateY(10%);
+
+  
 }
 
 `
@@ -201,6 +249,7 @@ right: -10%;
 top: -10%;
 transform: scale(1.3);
 
+
 ${above.large`
     width: 25%;    // ancho de mi pagina    
     height: 28%; 
@@ -215,21 +264,23 @@ export const SAnimacionTextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 20%;    // largo de mi pagina
-background: none; //color de fondo
+background:aqua; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 
+
+
 position: absolute;
-right: 0;
-bottom:0;
+right: 0%;
+bottom:0%;
+
 
 ${above.large`
-    width: 30%;    // ancho de mi pagina    
+    width: 50%;    // ancho de mi pagina    
     height: 20%;
-    right: 25%;
-    bottom: 30%;
+    bottom:10%;
   `}
 `
 
