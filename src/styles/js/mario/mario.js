@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { above } from '../index'
-import { fonts } from "../../../utils/const"
+import { colors, fonts } from "../../../utils/const"
 
 /*
 Nomenclatura de Estilos:
@@ -210,6 +210,7 @@ text-align: center;
 
 position: relative;
 padding: 20%;
+color: ${colors.black};
 
 h1{
   font-family: ${fonts.reciaB};
@@ -242,16 +243,17 @@ vertical-align: baseline;
 
 
 ${above.large`
-background: aqua;
-padding: 0 20%;
+background:none;
+padding: 0 25%;
 h1{
   font-size: 3em;
 }
 
 .Un{
-font-size: 1.5em;
-vertical-align: super;
+font-size: 1em;
+vertical-align: super ;
 }
+
 .Es{
 font-size: 1em;
 vertical-align: baseline;
@@ -302,13 +304,13 @@ align-items: center;
 
 position: absolute;
 right: 0%;
-bottom:-13%;
+bottom:7%;
 
 
 ${above.large`
     width: 50%;      
     height: 20%;
-    bottom:15%;
+    bottom:7%;
     left: 30%;
   `}
 `
