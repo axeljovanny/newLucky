@@ -225,13 +225,42 @@ h1 > span {
 
 }
 
-.algo{
+.Es{
 
   font-size: 1.5em;
 vertical-align: super;
-
   
 }
+
+.Un{
+
+font-size: 1em;
+vertical-align: baseline;
+
+}
+
+
+${above.large`
+background: aqua;
+padding: 0 30%;
+
+
+
+
+.Un{
+
+font-size: 1.5em;
+vertical-align: super;
+}
+.Es{
+
+font-size: 1em;
+vertical-align: baseline;
+
+}
+
+  `}
+
 
 `
 

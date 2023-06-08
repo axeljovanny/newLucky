@@ -68,7 +68,7 @@ const Header = ({ siteTitle }) => {
           <SInicioYCervicios>
             <STextoInicio>
               <h1>
-                LA <span>CREATIVIDAD</span>  <span class="algo">ES</span>  UN <span>REFLEJO</span> DE <span>NUESTRA</span>{" "}
+              LA <span>CREATIVIDAD</span>  <span class="Es">ES</span>  <span class="Un"> UN </span> <span>REFLEJO</span> DE <span>NUESTRA</span>{" "}  
               </h1>
               <SAnimacionCentral>
                 <IStickerLap />
