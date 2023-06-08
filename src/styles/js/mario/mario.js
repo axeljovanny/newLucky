@@ -225,9 +225,10 @@ h1 > span {
 
 }
 
-h1 > span.es{
+.algo{
 
-transform: translateY(10%);
+  font-size: 1.5em;
+vertical-align: super;
 
   
 }
