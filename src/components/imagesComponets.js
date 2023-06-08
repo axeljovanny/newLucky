@@ -161,6 +161,7 @@ export function IStickerBorrego() {
     quality='80'
     formats={['auto', 'webp', 'avif']}
     className="imgBorrego"
+    imgClassName=""
 
     />
 

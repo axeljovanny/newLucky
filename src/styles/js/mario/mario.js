@@ -264,7 +264,7 @@ export const SAnimacionTextoInicio = styled.div`
 
 width: 100%;    // ancho de mi pagina    
 height: 20%;    // largo de mi pagina
-background:aqua; //color de fondo
+background:none; //color de fondo
 display: flex;  // utilizar las funciones de flex
 flex-wrap: wrap;
 justify-content: center;
@@ -274,13 +274,14 @@ align-items: center;
 
 position: absolute;
 right: 0%;
-bottom:0%;
+bottom:-13%;
 
 
 ${above.large`
-    width: 50%;    // ancho de mi pagina    
+    width: 50%;      
     height: 20%;
-    bottom:10%;
+    bottom:15%;
+    left: 30%;
   `}
 `
 
@@ -299,13 +300,22 @@ position: relative;
 p{
 
   font-family: ${fonts.montExtraBold};
-font-size: 13px;
+font-size: 10px;
+
 
 }
 
+${above.large`
+  p{
+
+font-size: 13px;
 
 
+}
+   
+  `}
 `
+
 
 
 
@@ -337,8 +347,7 @@ export const SAnimacionHomeIzq = styled.div`
 
 width: 40%;    // ancho de mi pagina    
 height: 100%;    // largo de mi pagina
-background: none ; //color de fondo
-display: flex;  // utilizar las funciones de flex
+background: none;  // utilizar las funciones de flex
 justify-content: center;
 align-items: center;
 border: 1px solid none;
@@ -346,6 +355,7 @@ position: absolute;
 left: -10%;
 bottom: 0%;
 transform: scale(1.2);
+transform: translateY(-10%);
 
 
 ${above.large`
