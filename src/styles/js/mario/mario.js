@@ -222,6 +222,7 @@ h1{
 h1 > span {
   font-size: 2em;
   background: none;
+  margin: 0;
 
 }
 
@@ -242,21 +243,18 @@ vertical-align: baseline;
 
 ${above.large`
 background: aqua;
-padding: 0 30%;
-
-
-
+padding: 0 20%;
+h1{
+  font-size: 3em;
+}
 
 .Un{
-
 font-size: 1.5em;
 vertical-align: super;
 }
 .Es{
-
 font-size: 1em;
 vertical-align: baseline;
-
 }
 
   `}
